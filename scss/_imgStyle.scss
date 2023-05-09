@@ -1,19 +1,19 @@
 //bg
-.bg {
-    background: url('../images/bg.jpg') top center;
-    background-size: 100%;
-}
-.bg.game {
-    background: url('../images/gameBG.jpg') top center;
-    background-size: 100%;
-}
-.bg.inner {
-    background: url("../images/innerBG.jpg") no-repeat top center;
-    background-size: 100%;
-}
-.registerBG {
-    background: url('../images/registerBG.jpg') no-repeat top center;
-}
+// .bg {
+//     background: url('../images/bg.jpg') top center;
+//     background-size: 100%;
+// }
+// .bg.game {
+//     background: url('../images/gameBG.jpg') top center;
+//     background-size: 100%;
+// }
+// .bg.inner {
+//     background: url("../images/innerBG.jpg") no-repeat top center;
+//     background-size: 100%;
+// }
+// .registerBG {
+//     background: url('../images/registerBG.jpg') no-repeat top center;
+// }
 
 //ad
 .slick-arrow {
@@ -184,29 +184,29 @@ footer .evo {
 footer .qs {
     background: url('../images/partner/footer_partner/qs.png') no-repeat center;
 }
-footer .linkBox .link::before {
+footer .link::before {
     background: url('../images/GC-icon.png') no-repeat center;
     background-size: contain;
 }
 
 //gameWrap
-// .gameWrap .content .banner {
-//     background: url('../images/gameWrap_TitleBG.png') no-repeat;
-//     background-size: contain;
-// }
+.gameWrap .content .banner {
+    background: url('../images/gameWrap_TitleBG.png') no-repeat;
+    background-size: contain;
+}
 .gameWrap .search_ic {
     background: url('../images/icon/search.png') no-repeat;
     background-size: contain;
 }
-.gameWrap .platformBox li {
-    background: url('../images/gameWrapNav_02.png');
-}
-.gameWrap .platformBox li::before {
-    background: url('../images/gameWrapNav_01.png');
-}
-.gameWrap .platformBox li::after {
-    background: url('../images/gameWrapNav_03.png');
-}
+// .gameWrap .platformBox li {
+//     background: url('../images/gameWrapNav_02.png');
+// }
+// .gameWrap .platformBox li::before {
+//     background: url('../images/gameWrapNav_01.png');
+// }
+// .gameWrap .platformBox li::after {
+//     background: url('../images/gameWrapNav_03.png');
+// }
 .gameWrap .platformBox li.active {
     background: url('../images/gameWrapNav_02_active.png');
 }
@@ -496,27 +496,27 @@ footer .linkBox .link::before {
     background: url('../images/icon/arrow_3.png') no-repeat;
     background-size: contain;
 }
-.innerPage .rightSide .topList li {
-    background: url('../images/innerPageNav_02.png');
-}
-.innerPage .rightSide .topList li:hover,
-.innerPage .rightSide .topList li.active {
-    background: url('../images/innerPageNav_02_active.png');
-}
-.innerPage .rightSide .topList li::before {
-    background: url("../images/innerPageNav_01.png");
-}
-.innerPage .rightSide .topList li:hover::before,
-.innerPage .rightSide .topList li.active::before {
-    background: url('../images/innerPageNav_01_active.png');
-}
-.innerPage .rightSide .topList li::after {
-    background: url("../images/innerPageNav_03.png");
-}
-.innerPage .rightSide .topList li:hover::after,
-.innerPage .rightSide .topList li.active::after {
-    background: url('../images/innerPageNav_03_active.png');
-}
+// .innerPage .rightSide .topList li {
+//     background: url('../images/innerPageNav_02.png');
+// }
+// .innerPage .rightSide .topList li:hover,
+// .innerPage .rightSide .topList li.active {
+//     background: url('../images/innerPageNav_02_active.png');
+// }
+// .innerPage .rightSide .topList li::before {
+//     background: url("../images/innerPageNav_01.png");
+// }
+// .innerPage .rightSide .topList li:hover::before,
+// .innerPage .rightSide .topList li.active::before {
+//     background: url('../images/innerPageNav_01_active.png');
+// }
+// .innerPage .rightSide .topList li::after {
+//     background: url("../images/innerPageNav_03.png");
+// }
+// .innerPage .rightSide .topList li:hover::after,
+// .innerPage .rightSide .topList li.active::after {
+//     background: url('../images/innerPageNav_03_active.png');
+// }
 .innerPage .rightSide .selectBox .arrow_ic {
     background: url('../images/icon/arrow_2.png') no-repeat;
     background-size: contain;
@@ -557,24 +557,24 @@ footer .linkBox .link::before {
     background: url('../images/qr.png') no-repeat;
     background-size: contain;
 }
-.innerPage .rightSide.vip .bar {
-    background: url('../images/vipBar_02.png');
-}
-.innerPage .rightSide.vip .bar::before {
-    background: url('../images/vipBar_01.png') no-repeat;
-}
-.innerPage .rightSide.vip .bar::after {
-    background: url('../images/vipBar_03.png') no-repeat;
-}
-.innerPage .rightSide.vip .bar div {
-    background: url('../images/vipBar_02_active.png');
-}
-.innerPage .rightSide.vip .bar div::before {
-    background: url('../images/vipBar_01_active.png') no-repeat;
-}
-.innerPage .rightSide.vip .bar div::after {
-    background: url('../images/vipBar_03_active.png') no-repeat;
-}
+// .innerPage .rightSide.vip .bar {
+//     background: url('../images/vipBar_02.png');
+// }
+// .innerPage .rightSide.vip .bar::before {
+//     background: url('../images/vipBar_01.png') no-repeat;
+// }
+// .innerPage .rightSide.vip .bar::after {
+//     background: url('../images/vipBar_03.png') no-repeat;
+// }
+// .innerPage .rightSide.vip .bar div {
+//     background: url('../images/vipBar_02_active.png');
+// }
+// .innerPage .rightSide.vip .bar div::before {
+//     background: url('../images/vipBar_01_active.png') no-repeat;
+// }
+// .innerPage .rightSide.vip .bar div::after {
+//     background: url('../images/vipBar_03_active.png') no-repeat;
+// }
 .innerPage .rightSide.vip .detailBox button {
     background: url('../images/vipDetail_Btn.png') no-repeat;
     background-size: contain;

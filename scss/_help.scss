@@ -220,7 +220,7 @@
                     }
 
                     p {
-                        color: $mainFont_1;
+                        color: $subDeco_color02;
                         font-size: 16px;
                         font-weight: bold;
                         flex-shrink: 0;
@@ -230,7 +230,7 @@
                     .line {
                         width: 100%;
                         height: 2px;
-                        background: $line;
+                        background: $subDeco_color02;
                     }
 
                     .star_ic {
@@ -280,7 +280,7 @@
                                     border-bottom: solid 1px $helpMoreList_Border;
 
                                     p {
-                                        color: $mainFont_1;
+                                        color: $mainDeco_color;
                                     }
 
                                     i {
@@ -321,7 +321,7 @@
                                 padding: 16px 24px;
 
                                 p {
-                                    color: $mainFont_3;
+                                    color: $mainFont_4;
                                     font-size: 16px;
                                     font-weight: bold;
                                     line-height: 24px;
@@ -358,7 +358,7 @@
                         }
 
                         p {
-                            color: $mainFont_3;
+                            color: $mainFont_4;
                             font-size: 16px;
                             font-weight: bold;
                             line-height: 24px;

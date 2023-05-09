@@ -369,10 +369,10 @@ $(function(){
         .addClass("display");
     })
 
-    $(".gameWrap .platformBox .love").on("click",function(){
+    $(".gameWrap .platformBox .liked").on("click",function(){
         $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
         .removeClass("display");
-        $(".gameWrap .gameBox .love")
+        $(".gameWrap .gameBox .liked")
         .addClass("display");
     })
 

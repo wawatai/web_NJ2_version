@@ -65,7 +65,7 @@
                             font-weight: bold;
                             white-space: nowrap;
                             padding-left: 100%;
-                            animation: marquee 5s linear 0s infinite;
+                            animation: marquee 10s linear 0s infinite;
                         }
                     }
 
@@ -336,7 +336,7 @@
                                 }
 
                                 .remind {
-                                    color: $mainFont_3;
+                                    color: $mainFont_4;
                                     font-size: 14px;
                                     font-weight: bold;
                                 }
@@ -414,38 +414,37 @@
                         width: 100%;
                         height: auto;
                         display: flex;
-                        padding-left: 24px;
+                        padding-left: 10px;
 
                         li {
                             width: auto;
                             height: 40px;
                             position: relative;
-                            color: $innerPage_topList_Word;
-                            font-size: 18px;
-                            font-weight: bold;
+                            background: $mainColor;
+                            border: 1px solid $innerPage_topList_border;
+                            border-bottom: transparent;
+                            transform: skewX(335deg);
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             cursor: pointer;
-                            padding: 0 10px;
-                            margin-right: 35px;
+                            padding: 0 23px;
+                            margin-right: 11px;
 
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                left: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            p {
+                                display: block;
+                                color: $gameWrap_platformBtn_Word;
+                                font-size: 20px;
+                                font-weight: bold;
+                                transform: skewX(-335deg);
                             }
 
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                right: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            &:hover,&:active,&.active {
+                                background: $innerPage_topList_activeBG;
+                                border-color: transparent;
+                                p {
+                                    color: $mainFont_4;
+                                }
                             }
                         }
                     }
@@ -689,12 +688,12 @@
 
                                         .copy_ic {
                                             width: 42px;
-                                            height: 42px;
+                                            height: 37px;
                                             background: $input_disabledBG;
                                             position: absolute;
                                             top: 50%;
                                             transform: translateY(-50%);
-                                            right: 0;
+                                            right: 1px;
                                             cursor: pointer;
 
                                             &::before {
@@ -809,7 +808,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 14px;
                                             font-weight: bold;
                                             text-align: center;
@@ -938,7 +937,7 @@
                                 }
 
                                 .smallTitle {
-                                    color: $mainFont_3;
+                                    color: $mainFont_5;
                                     font-size: 16px;
                                     font-weight: bold;
                                 }
@@ -997,7 +996,7 @@
                                     text-align: right;
 
                                     span {
-                                        color: $mainFont_1;
+                                        color: $subDeco_color02;
                                         padding: 0 5px;
                                     }
                                 }
@@ -1026,13 +1025,13 @@
                                 padding: 24px 32px;
 
                                 .smallTitle {
-                                    color: $mainFont_2;
+                                    color: $mainFont_5;
                                     font-size: 18px;
                                     font-weight: bold;
                                 }
 
                                 .amount {
-                                    color: $mainFont_1;
+                                    color: $subDeco_color02;
                                     font-size: 30px;
                                     font-weight: bold;
                                 }
@@ -1159,7 +1158,7 @@
                                     background: $table_TitleSecondBG;
 
                                     p {
-                                        color: $mainFont_3;
+                                        color: $mainFont_4;
                                     }
                                 }
 
@@ -1196,7 +1195,7 @@
                                     width: 100%;
                                     height: 22px;
                                     border-right: solid 1px $table_secondBorder;
-                                    color: $mainFont_3;
+                                    color: $mainFont_5;
                                     font-size: 14px;
                                     font-weight: bold;
                                     display: flex;
@@ -1219,7 +1218,6 @@
                         width: 100%;
                         height: auto;
                         @include innerBG_2;
-                        border: none;
                         padding: 12px 40px;
 
                         .title {
@@ -1240,7 +1238,7 @@
                             height: auto;
 
                             p {
-                                color: $mainFont_3;
+                                color: $mainFont_4;
                                 font-size: 14px;
                                 font-weight: bold;
                                 line-height: 18px;
@@ -1325,12 +1323,12 @@
 
                                 .copy_ic {
                                     width: 42px;
-                                    height: 42px;
+                                    height: 37px;
                                     background: $input_disabledBG;
                                     position: absolute;
                                     top: 50%;
                                     transform: translateY(-50%);
-                                    right: 0;
+                                    right: 1px;
                                     cursor: pointer;
 
                                     &::before {
@@ -1388,7 +1386,6 @@
                         width: 100%;
                         height: auto;
                         @include innerBG_2;
-                        border: none;
                         padding: 12px 40px;
 
                         .title {
@@ -1417,7 +1414,7 @@
                             height: auto;
 
                             p {
-                                color: $mainFont_3;
+                                color: $mainFont_4;
                                 font-size: 14px;
                                 font-weight: bold;
                                 line-height: 18px;
@@ -1467,7 +1464,7 @@
                                 justify-content: space-between;
                                 
                                 p {
-                                    color: $mainFont_2;
+                                    color: $mainFont_5;
                                     font-size: 20px;
                                     font-weight: bold;
                                 }
@@ -1497,7 +1494,7 @@
                                 justify-content: space-between;
 
                                 p {
-                                    color: $mainFont_1;
+                                    color: $subDeco_color02;
                                     font-size: 43px;
                                     font-weight: bold;
                                 }
@@ -1527,13 +1524,13 @@
                                 padding: 0 16px 0 21px;
 
                                 .name {
-                                    color: $mainFont_3;
+                                    color: $mainFont_5;
                                     font-size: 16px;
                                     font-weight: bold;
                                 }
 
                                 .amount {
-                                    color: $mainFont_1;
+                                    color: $subDeco_color02;
                                     font-size: 25px;
                                     font-weight: bold;
                                     display: flex;
@@ -1668,38 +1665,38 @@
                         width: 100%;
                         height: auto;
                         display: flex;
-                        padding-left: 24px;
+                        padding-left: 10px;
 
                         li {
                             width: auto;
                             height: 40px;
                             position: relative;
-                            color: $innerPage_topList_Word;
-                            font-size: 18px;
-                            font-weight: bold;
+                            background: $mainColor;
+                            border: 1px solid $innerPage_topList_border;
+                            border-bottom: transparent;
+                            transform: skewX(335deg);
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             cursor: pointer;
-                            padding: 0 10px;
-                            margin-right: 35px;
+                            padding: 0 23px;
+                            margin-right: 11px;
 
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                left: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            p {
+                                display: block;
+                                color: $gameWrap_platformBtn_Word;
+                                font-size: 20px;
+                                font-weight: bold;
+                                transform: skewX(-335deg);
+                                font-weight: bold;
                             }
 
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                right: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            &:hover,&:active,&.active {
+                                background: $innerPage_topList_activeBG;
+                                border-color: transparent;
+                                p {
+                                    color: $mainFont_4;
+                                }
                             }
                         }
                     }
@@ -1821,7 +1818,12 @@
                                     width: 150px;
                                     height: 42px;
                                     @include secondBtn;
+                                    background: $deposit_depList_nameLinearActive;
                                     margin-top: 15px;
+
+                                    &:hover,&:active,&.active {
+                                        background: $subDeco_color02;
+                                    }
                                 }
                             }
                             
@@ -1875,14 +1877,14 @@
     
                                             p {
                                                 width: 100%;
-                                                color: $mainFont_3;
+                                                color: $mainFont_5;
                                                 font-size: 14px;
                                                 font-weight: bold;
                                                 text-align: center;
                                                 @include textHidden;
     
                                                 &.money {
-                                                    color: $mainFont_1;
+                                                    color: $subDeco_color02;
                                                 }
                                             }
                                         }
@@ -2020,7 +2022,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 16px;
                                             font-weight: bold;
                                             text-align: center;
@@ -2255,7 +2257,12 @@
                                 width: 150px;
                                 height: 42px;
                                 @include secondBtn;
+                                background: $deposit_depList_nameLinearActive;
                                 margin-top: 20px;
+
+                                &:hover,&:active,&.active {
+                                    background: $subDeco_color02;
+                                }
                             }
                         }
 
@@ -2352,14 +2359,14 @@
     
                                             p {
                                                 width: 100%;
-                                                color: $mainFont_3;
+                                                color: $mainFont_5;
                                                 font-size: 14px;
                                                 font-weight: bold;
                                                 text-align: center;
                                                 @include textHidden;
                                                 
                                                 &.money {
-                                                    color: $mainFont_1;
+                                                    color: $subDeco_color02;
                                                 }
                                             }
     
@@ -2400,7 +2407,7 @@
 
                                                     p {
                                                         width: 100%;
-                                                        color: $mainFont_1;
+                                                        color: $subDeco_color02;
                                                         font-size: 16px;
                                                         font-weight: bold;
                                                         text-align: center;
@@ -2435,7 +2442,7 @@
 
                                                     p {
                                                         width: 100%;
-                                                        color: $mainFont_3;
+                                                        color: $mainFont_4;
                                                         font-size: 14px;
                                                         font-weight: bold;
                                                         text-align: center;
@@ -2463,13 +2470,14 @@
                                             width: 26px;
                                             height: 26px;
                                             @include lightBtn_2;
+                                            background: $mainFont_4;
                                             display: flex;
                                             align-items: center;
                                             justify-content: center;
                                             margin-left: 10px;
 
                                             &:hover,&:active,&.active {
-
+                                                background: $remind_fail;
                                                 i {
                                                     filter: grayscale(1) brightness(15);
                                                 }
@@ -2608,38 +2616,38 @@
                         width: 100%;
                         height: auto;
                         display: flex;
-                        padding-left: 24px;
+                        padding-left: 10px;
 
                         li {
                             width: auto;
                             height: 40px;
                             position: relative;
-                            color: $innerPage_topList_Word;
-                            font-size: 18px;
-                            font-weight: bold;
+                            background: $mainColor;
+                            border: 1px solid $innerPage_topList_border;
+                            border-bottom: transparent;
+                            transform: skewX(335deg);
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             cursor: pointer;
-                            padding: 0 10px;
-                            margin-right: 35px;
+                            padding: 0 23px;
+                            margin-right: 11px;
 
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                left: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            p {
+                                display: block;
+                                color: $gameWrap_platformBtn_Word;
+                                font-size: 20px;
+                                font-weight: bold;
+                                transform: skewX(-335deg);
                             }
 
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                right: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            &:hover,&:active,&.active {
+                                background: $innerPage_topList_activeBG;
+                                border-color: transparent;
+
+                                p {
+                                    color: $mainFont_4;
+                                }
                             }
                         }
                     }
@@ -2711,7 +2719,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 16px;
                                             font-weight: bold;
                                             text-align: center;
@@ -2733,7 +2741,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_4;
                                             font-size: 14px;
                                             font-weight: bold;
                                             text-align: center;
@@ -2754,7 +2762,7 @@
                                         &:nth-of-type(even) {
 
                                             td {
-                                                background: $table_thirdBG;
+                                                background: $table_secondBG;
                                             }
                                         }
 
@@ -2786,14 +2794,22 @@
 
                                     &:last-child {
                                         width: 135px;
-                                        @include secondBtn;
+                                        @include mainBtn;
                                         margin-left: 15px;
+
+                                        &:hover,&:active,&.active {
+                                            background: $deposit_depList_nameLinearActive;
+                                        }
                                     }
 
                                     &:first-child {
                                         width: 220px;
-                                        @include mainBtn;
+                                        @include  helpLeftList_innerBtn;
                                         margin: 0;
+
+                                        &:hover,&:active,&.active {
+                                            background: $deposit_depList_nameLinear;
+                                        }
                                     }
                                 }
                             }
@@ -2965,7 +2981,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 14px;
                                             font-weight: bold;
                                             text-align: center;
@@ -3172,7 +3188,7 @@
                             width: 100%;
                             height: auto;
                             display: none;
-                            padding-left: 24px;
+                            padding-left: 10px;
 
                             &.display {
                                 display: flex;
@@ -3182,32 +3198,31 @@
                                 width: auto;
                                 height: 40px;
                                 position: relative;
-                                color: $innerPage_topList_Word;
-                                font-size: 18px;
-                                font-weight: bold;
+                                background: $mainColor;
+                                border: 1px solid $innerPage_topList_border;
+                                border-bottom: transparent;
+                                transform: skewX(335deg);
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 cursor: pointer;
-                                padding: 0 10px;
-                                margin-right: 35px;
-
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    left: -24px;
-                                    top: 0;
-                                    width: 24px;
-                                    height: 100%;
+                                padding: 0 23px;
+                                margin-right: 11px;
+    
+                                p {
+                                    display: block;
+                                    color: $gameWrap_platformBtn_Word;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    transform: skewX(-335deg);
                                 }
-
-                                &::after {
-                                    content: "";
-                                    position: absolute;
-                                    right: -24px;
-                                    top: 0;
-                                    width: 24px;
-                                    height: 100%;
+    
+                                &:hover,&:active,&.active {
+                                    background: $innerPage_topList_activeBG;
+                                    border-color: transparent;
+                                    p {
+                                        color: $mainFont_4;
+                                    }
                                 }
                             }
                         }
@@ -3365,6 +3380,7 @@
 
                                     &.read {
                                         background: none;
+                                        border: 2px solid $mainFont_3;
                                         
                                         &::before {
                                             display: none;
@@ -3440,7 +3456,7 @@
                                         align-items: center;
 
                                         .smallTitle {
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 18px;
                                             font-weight: bold;
                                             margin-right: 5px;
@@ -3449,14 +3465,14 @@
     
                                         .content {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 16px;
                                             font-weight: bold;
                                             @include textHidden;
                                         }
     
                                         .time {
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 16px;
                                             font-weight: bold;
                                             display: flex;
@@ -3494,7 +3510,7 @@
                                     margin-bottom: 20px;
 
                                     .name {
-                                        color: $mainFont_3;
+                                        color: $mainFont_5;
                                         font-size: 23px;
                                         font-weight: bold;
                                     }
@@ -3511,11 +3527,12 @@
                                     height: auto;
                                     min-height: 338px;
                                     background: $mail_BG;
+                                    border: 1px solid $mainFont_5;
                                     padding: 16px;
                                     margin-bottom: 20px;
 
                                     p {
-                                        color: $mainFont_3;
+                                        color: $mainFont_4;
                                         font-size: 16px;
                                         font-weight: bold;
                                         line-height: 24px;
@@ -3662,38 +3679,37 @@
                         width: 100%;
                         height: auto;
                         display: flex;
-                        padding-left: 24px;
+                        padding-left: 10px;
 
                         li {
                             width: auto;
                             height: 40px;
                             position: relative;
-                            color: $innerPage_topList_Word;
-                            font-size: 18px;
-                            font-weight: bold;
+                            background: $mainColor;
+                            border: 1px solid $innerPage_topList_border;
+                            border-bottom: transparent;
+                            transform: skewX(335deg);
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             cursor: pointer;
-                            padding: 0 10px;
-                            margin-right: 35px;
+                            padding: 0 23px;
+                            margin-right: 11px;
 
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                left: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            p {
+                                display: block;
+                                color: $gameWrap_platformBtn_Word;
+                                font-size: 20px;
+                                font-weight: bold;
+                                transform: skewX(-335deg);
                             }
 
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                right: -24px;
-                                top: 0;
-                                width: 24px;
-                                height: 100%;
+                            &:hover,&:active,&.active {
+                                background: $innerPage_topList_activeBG;
+                                border-color: transparent;
+                                p {
+                                    color: $mainFont_4;
+                                }
                             }
                         }
                     }
@@ -3781,7 +3797,12 @@
                                 width: 150px;
                                 height: 42px;
                                 @include secondBtn;
+                                background: $deposit_depList_nameLinearActive;
                                 margin-top: 15px;
+
+                                &:hover,&:active,&.active {
+                                    background: $subDeco_color02;
+                                }
                             }
                         }
                         
@@ -3806,7 +3827,7 @@
 
                                     div {
                                         height: 30px;
-                                        border-right: solid 1px $table_secondBorder;
+                                        border-right: solid 1px $table_Border;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
@@ -3824,10 +3845,6 @@
                                             width: 29%;
                                         }
 
-                                        &:nth-of-type(4) {
-                                            border: none;
-                                        }
-
                                         &.btnBox {
                                             height: 100%;
                                             justify-content: center;
@@ -3838,7 +3855,7 @@
                                             &.disable {
                                                 height: 30px;
                                                 background: none;
-                                                border-left: solid 1px $table_secondBorder;
+                                                // border-left: solid 1px $table_secondBorder;
                                             }
 
                                             button {
@@ -3850,13 +3867,13 @@
                                         }
 
                                         p {
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 16px;
                                             font-weight: bold;
                                         }
 
                                         span {
-                                            color: $mainFont_1;
+                                            color: $subDeco_color02;
                                             font-size: 16px;
                                             font-weight: bold;
                                         }
@@ -3899,7 +3916,7 @@
 
                                         p {
                                             width: 100%;
-                                            color: $mainFont_3;
+                                            color: $mainFont_5;
                                             font-size: 14px;
                                             font-weight: bold;
                                             text-align: center;
@@ -4255,7 +4272,6 @@
                         width: 100%;
                         height: auto;
                         @include innerBG_2;
-                        border: none;
                         padding: 16px 48px 24px;
 
                         .smallTitle {
@@ -4273,7 +4289,7 @@
                             }
 
                             p {
-                                color: $mainFont_1;
+                                color: $subDeco_color02;
                                 font-size: 18px;
                                 font-weight: bold;
                                 flex-shrink: 0;
@@ -4282,7 +4298,7 @@
                             .line {
                                 width: 100%;
                                 height: 2px;
-                                background: $line;
+                                background: $subDeco_color02;
                             }
                         }
 
@@ -4296,7 +4312,7 @@
                             }
 
                             p {
-                                color: $mainFont_3;
+                                color: $mainFont_4;
                                 font-size: 16px;
                                 font-weight: bold;
                                 line-height: 24px;
@@ -4416,7 +4432,7 @@
                                 padding: 0 16px 0 21px;
 
                                 .name {
-                                    color: $mainFont_3;
+                                    color: $mainFont_5;
                                     font-size: 16px;
                                     font-weight: bold;
                                 }
@@ -4699,7 +4715,7 @@
                                 padding: 0 16px 0 21px;
 
                                 .name {
-                                    color: $mainFont_3;
+                                    color: $mainFont_5;
                                     font-size: 16px;
                                     font-weight: bold;
                                 }
@@ -4869,7 +4885,6 @@
                             width: 100%;
                             height: auto;
                             @include innerBG_2;
-                            border: none;
                             padding: 16px 48px 24px;
 
                             .smallTitle {
@@ -4887,7 +4902,7 @@
                                 }
 
                                 p {
-                                    color: $mainFont_1;
+                                    color: $subDeco_color02;
                                     font-size: 18px;
                                     font-weight: bold;
                                     flex-shrink: 0;
@@ -4896,7 +4911,7 @@
                                 .line {
                                     width: 100%;
                                     height: 2px;
-                                    background: $line;
+                                    background: $subDeco_color02;
                                 }
                             }
 
@@ -4910,7 +4925,7 @@
                                 }
 
                                 p {
-                                    color: $mainFont_3;
+                                    color: $mainFont_4;
                                     font-size: 16px;
                                     font-weight: bold;
                                     line-height: 24px;
@@ -4951,7 +4966,7 @@
                     }
 
                     p {
-                        color: $mainFont_1;
+                        color: $subDeco_color02;
                         font-size: 16px;
                         font-weight: bold;
                         flex-shrink: 0;
@@ -4961,7 +4976,7 @@
                     .line {
                         width: 100%;
                         height: 2px;
-                        background: $line;
+                        background: $subDeco_color02;;
                     }
 
                     .star_ic {
@@ -4969,6 +4984,131 @@
                         height: 12px;
                         flex-shrink: 0;
                         margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        //outerBox
+        .outerBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            //walletSide
+            .walletSide {
+                width: 300px;
+                height: auto;
+                margin-left: 15px;
+
+                .innerBox {
+                    width: 100%;
+                    height: 400px;
+                    @include innerPageWrapBG;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 45px 12px 12px;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        padding: 12px;
+                        margin: 0;
+                    }
+
+                    .title {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        flex-shrink: 0;
+                        margin-bottom: 15px;
+                        
+                        span {
+                            color: $subDeco_color02;
+                            font-size: 16px;
+                            font-weight: bold;
+                            flex-shrink: 0;
+                        }
+
+                        i {
+                            width: 100%;
+                            height: 2px;
+                            background: $subDeco_color02;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+
+                        &::-webkit-scrollbar {
+                            width: 0;
+                        }
+
+                        li {
+                            width: 100%;
+                            height: auto;
+                            border-bottom: solid 1px $mainFont_5;
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+
+                            .platform {
+                                color: $mainFont_5;
+                                font-size: 16px;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                            }
+
+                            .betBox {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+
+                                div {
+                                    width: 50%;
+                                    height: auto;
+
+                                    .smallTitle {
+                                        color: $mainFont_4;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        margin-bottom: 5px;
+                                    }
+
+                                    .money {
+                                        color: $disable;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                    }
+
+                                    .result {
+                                        color: $subDeco_color02;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .eventBox {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+
+                        img {
+                            width: 100%;
+                            border-radius: 5px;
+                            object-fit: contain;
+                            cursor: pointer;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }

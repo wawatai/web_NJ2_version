@@ -1,6 +1,6 @@
 @charset "UTF-8";
 button:disabled {
-  background: #c9c9c9 !important;
+  background: #504f4f !important;
   border: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -14,25 +14,6 @@ input:disabled {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border: none !important;
-}
-
-.bg {
-  background: url("../images/bg.jpg") top center;
-  background-size: 100%;
-}
-
-.bg.game {
-  background: url("../images/gameBG.jpg") top center;
-  background-size: 100%;
-}
-
-.bg.inner {
-  background: url("../images/innerBG.jpg") no-repeat top center;
-  background-size: 100%;
-}
-
-.registerBG {
-  background: url("../images/registerBG.jpg") no-repeat top center;
 }
 
 .slick-arrow {
@@ -242,26 +223,19 @@ footer .qs {
   background: url("../images/partner/footer_partner/qs.png") no-repeat center;
 }
 
-footer .linkBox .link::before {
+footer .link::before {
   background: url("../images/GC-icon.png") no-repeat center;
+  background-size: contain;
+}
+
+.gameWrap .content .banner {
+  background: url("../images/gameWrap_TitleBG.png") no-repeat;
   background-size: contain;
 }
 
 .gameWrap .search_ic {
   background: url("../images/icon/search.png") no-repeat;
   background-size: contain;
-}
-
-.gameWrap .platformBox li {
-  background: url("../images/gameWrapNav_02.png");
-}
-
-.gameWrap .platformBox li::before {
-  background: url("../images/gameWrapNav_01.png");
-}
-
-.gameWrap .platformBox li::after {
-  background: url("../images/gameWrapNav_03.png");
 }
 
 .gameWrap .platformBox li.active {
@@ -619,33 +593,6 @@ footer .linkBox .link::before {
   background-size: contain;
 }
 
-.innerPage .rightSide .topList li {
-  background: url("../images/innerPageNav_02.png");
-}
-
-.innerPage .rightSide .topList li:hover,
-.innerPage .rightSide .topList li.active {
-  background: url("../images/innerPageNav_02_active.png");
-}
-
-.innerPage .rightSide .topList li::before {
-  background: url("../images/innerPageNav_01.png");
-}
-
-.innerPage .rightSide .topList li:hover::before,
-.innerPage .rightSide .topList li.active::before {
-  background: url("../images/innerPageNav_01_active.png");
-}
-
-.innerPage .rightSide .topList li::after {
-  background: url("../images/innerPageNav_03.png");
-}
-
-.innerPage .rightSide .topList li:hover::after,
-.innerPage .rightSide .topList li.active::after {
-  background: url("../images/innerPageNav_03_active.png");
-}
-
 .innerPage .rightSide .selectBox .arrow_ic {
   background: url("../images/icon/arrow_2.png") no-repeat;
   background-size: contain;
@@ -694,30 +641,6 @@ footer .linkBox .link::before {
 .innerPage .rightSide.member .imgBox .qr {
   background: url("../images/qr.png") no-repeat;
   background-size: contain;
-}
-
-.innerPage .rightSide.vip .bar {
-  background: url("../images/vipBar_02.png");
-}
-
-.innerPage .rightSide.vip .bar::before {
-  background: url("../images/vipBar_01.png") no-repeat;
-}
-
-.innerPage .rightSide.vip .bar::after {
-  background: url("../images/vipBar_03.png") no-repeat;
-}
-
-.innerPage .rightSide.vip .bar div {
-  background: url("../images/vipBar_02_active.png");
-}
-
-.innerPage .rightSide.vip .bar div::before {
-  background: url("../images/vipBar_01_active.png") no-repeat;
-}
-
-.innerPage .rightSide.vip .bar div::after {
-  background: url("../images/vipBar_03_active.png") no-repeat;
 }
 
 .innerPage .rightSide.vip .detailBox button {
@@ -1284,6 +1207,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 html {
   width: 100%;
   height: auto;
+  background: #000000;
 }
 html.forRegister {
   background: #bd9c66;
@@ -1320,7 +1244,7 @@ html body header {
 html body header .top {
   width: 100%;
   height: 70px;
-  background: #ffffff;
+  background: #000000;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1373,36 +1297,35 @@ html body header .top .user li:not(.platform) .loginForm div {
 html body header .top .user li:not(.platform) .loginForm div input {
   width: 180px;
   height: 40px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
-  color: #b11319;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   padding: 0 5px 0 12px;
 }
 html body header .top .user li:not(.platform) .loginForm div input::-webkit-input-placeholder {
-  color: #b11319;
+  color: #ffffff;
 }
 html body header .top .user li:not(.platform) .loginForm div input::-moz-placeholder {
-  color: #b11319;
+  color: #ffffff;
 }
 html body header .top .user li:not(.platform) .loginForm div input:-ms-input-placeholder {
-  color: #b11319;
+  color: #ffffff;
 }
 html body header .top .user li:not(.platform) .loginForm div input::-ms-input-placeholder {
-  color: #b11319;
+  color: #ffffff;
 }
 html body header .top .user li:not(.platform) .loginForm div input::placeholder {
-  color: #b11319;
+  color: #ffffff;
 }
 html body header .top .user li:not(.platform) .loginForm button {
   width: 115px;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -1417,8 +1340,7 @@ html body header .top .user li:not(.platform) .loginForm button:hover, html body
 }
 html body header .top .user li:not(.platform) .loginForm button.signupBtn {
   width: 102px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -1480,7 +1402,7 @@ html body header .top .user li:not(.platform).lang::after {
 html body header .top .user li:not(.platform).lang select {
   width: 150px;
   height: 40px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
@@ -1508,14 +1430,20 @@ html body header .top .user.alLogin li:not(.platform):nth-of-type(3) button, htm
   color: #ffffff;
 }
 html body header .top .user.alLogin li:not(.platform):nth-of-type(3) button:hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(3) button:active, html body header .top .user.alLogin li:not(.platform):nth-of-type(3) button.active, html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button:hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button:active, html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button.active, html body header .top .user.alLogin li:not(.platform):nth-of-type(5) button:hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(5) button:active, html body header .top .user.alLogin li:not(.platform):nth-of-type(5) button.active {
-  background: #b8151a;
+  background: #DD2830;
   color: #ffffff;
+}
+html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button {
+  background: #DD2830;
+}
+html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button:hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button:active, html body header .top .user.alLogin li:not(.platform):nth-of-type(4) button.active {
+  background: #c9a567;
 }
 html body header .top .user.alLogin li:not(.platform) button {
   width: auto;
   height: auto;
   background: none;
-  color: #b8151a;
+  color: #DD2830;
   font-size: 16px;
   font-weight: bold;
   -webkit-transition: all 0.3s;
@@ -1561,7 +1489,7 @@ html body header .top .user.alLogin li:not(.platform).lv span {
 html body header .top .user.alLogin li:not(.platform).moneyTotal .total {
   width: auto;
   height: auto;
-  color: #b8151a;
+  color: #DD2830;
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -1744,7 +1672,7 @@ html body header .gameNav ul ol li:hover div, html body header .gameNav ul ol li
           filter: grayscale(1) brightness(4.2);
 }
 html body header .gameNav ul ol li:hover p, html body header .gameNav ul ol li:active p, html body header .gameNav ul ol li.active p {
-  color: #b37d1f;
+  color: #ff0000;
 }
 html body header .gameNav ul ol li div {
   position: absolute;
@@ -1790,8 +1718,7 @@ html body header .agent .logo {
 html body header .agent button {
   width: 150px;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -1836,7 +1763,7 @@ html body header .agent .lang::after {
 html body header .agent .lang select {
   width: 150px;
   height: 40px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
@@ -2017,8 +1944,8 @@ html body .multiple-items.vip .slick-list .slick-track {
   top: 75px;
 }
 html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip0 .levelBG .levelCnt {
-  background: -webkit-gradient(linear, left top, left bottom, from(#D9F1FF));
-  background: linear-gradient(to bottom, #D9F1FF 0% #99D1F4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#D9F1FF), to(#99D1F4));
+  background: linear-gradient(to bottom, #D9F1FF 0%, #99D1F4 100%);
   border-radius: 32px;
   border: solid 2px #2A87BF;
   display: -webkit-box;
@@ -2307,8 +2234,7 @@ html body .sideBar .inviteFriend {
 html body .sideBar .goTop {
   width: 95px;
   height: 95px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #ff0000;
   border-radius: 50%;
   position: fixed;
   right: 15px;
@@ -2362,7 +2288,7 @@ html body .mainWrap .center .marqueeWrap {
 html body .mainWrap .center .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
@@ -2374,8 +2300,8 @@ html body .mainWrap .center .marqueeWrap .marquee {
 html body .mainWrap .center .marqueeWrap .marquee .title {
   width: 165px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2406,13 +2332,13 @@ html body .mainWrap .center .marqueeWrap .marquee .textBox {
   overflow: hidden;
 }
 html body .mainWrap .center .marqueeWrap .marquee .textBox p {
-  color: #b37d1f;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
   padding-left: 100%;
-  -webkit-animation: marquee 5s linear 0s infinite;
-          animation: marquee 5s linear 0s infinite;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
 }
 @-webkit-keyframes marquee {
   0% {
@@ -2522,7 +2448,7 @@ html body .mainWrap .center .typeList .typeBox .title i.board_ic {
 }
 html body .mainWrap .center .typeList .typeBox .title p {
   width: 185px;
-  color: #b8151a;
+  color: #ff0000;
   font-size: 24px;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -2531,7 +2457,7 @@ html body .mainWrap .center .typeList .typeBox .title p {
 html body .mainWrap .center .typeList .typeBox .title .line {
   width: 100%;
   height: 3px;
-  background: #c30505;
+  background: #ff0000;
 }
 html body .mainWrap .center .typeList .typeBox .title .star {
   width: 112px;
@@ -2572,7 +2498,7 @@ html body .mainWrap .center .typeList .typeBox ul ol li.game {
 }
 html body .mainWrap .center .typeList .typeBox ul ol li p {
   width: 100%;
-  color: #ba9141;
+  color: #ff0000;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -2581,6 +2507,7 @@ html body .mainWrap .center .typeList .typeBox ul ol li p {
 html body footer {
   width: 100%;
   height: auto;
+  background: #000000;
   border-top: solid 1px #f3d197;
 }
 html body footer .center {
@@ -2594,6 +2521,7 @@ html body footer .center .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #000000;
   padding: 30px 0;
 }
 html body footer .center .top .listBox {
@@ -2609,7 +2537,8 @@ html body footer .center .top .listBox {
 html body footer .center .top .listBox .list {
   width: 220px;
   height: 280px;
-  background: #f3f3f3;
+  background: #000000;
+  border: 1px solid #daaf6d;
   border-radius: 16px;
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
@@ -2661,11 +2590,12 @@ html body footer .center .top .listBox .list ul li i {
   margin-right: 5px;
 }
 html body footer .center .top .listBox .list ul li p {
-  background: #1f2629;
+  background: #ffffff;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   font-size: 18px;
+  font-weight: bold;
 }
 html body footer .center .top .listBox .list ul li p.small {
   font-size: 15px;
@@ -2693,19 +2623,24 @@ html body footer .center .top .linkBox {
 html body footer .center .top .linkBox button {
   width: 200px;
   height: 54px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: #000000;
+  color: #ba9141;
+  border: 1px solid #daaf6d;
   font-size: 18px;
 }
 html body footer .center .top .linkBox button:hover, html body footer .center .top .linkBox button:active, html body footer .center .top .linkBox button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body footer .center .top .linkBox button:hover, html body footer .center .top .linkBox button:active, html body footer .center .top .linkBox button.active {
+  color: #3a3a3a;
 }
 html body footer .center .top .linkBox button.link {
   background: #ffffff;
@@ -2713,13 +2648,25 @@ html body footer .center .top .linkBox button.link {
 }
 html body footer .center .top .linkBox button.link::before {
   content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 121px;
   height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body footer .center .top .linkBox iframe {
+  width: 200px;
+  height: 54px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ebebeb), to(#ffffff));
+  background: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+  border-radius: 30px;
+  border: solid 1px #b74f4f;
+}
+html body footer .center .top .linkBox iframe:hover, html body footer .center .top .linkBox iframe:active, html body footer .center .top .linkBox iframe.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body footer .center .top .linkBox a {
   width: 57px;
@@ -2731,6 +2678,7 @@ html body footer .center .separateBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #000000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2758,6 +2706,7 @@ html body footer .center .separateBox .star {
 html body footer .center .bottom {
   width: 100%;
   height: auto;
+  background: #000000;
   padding: 30px 0;
 }
 html body footer .center .bottom ul {
@@ -2976,9 +2925,9 @@ html body .filter.display {
 html body .filter .jumpWindow {
   width: auto;
   height: auto;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 16px;
-  border: solid 1px #b8151a;
+  border: solid 1px #daaf6d;
   padding: 0 18px;
 }
 html body .filter .jumpWindow.forgetPassword {
@@ -3004,12 +2953,12 @@ html body .filter .jumpWindow.forgetPassword form {
 html body .filter .jumpWindow.forgetPassword form input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -3030,11 +2979,15 @@ html body .filter .jumpWindow.forgetPassword form input::-ms-input-placeholder {
 html body .filter .jumpWindow.forgetPassword form input::placeholder {
   color: #b08a48;
 }
+html body .filter .jumpWindow.forgetPassword form input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .filter .jumpWindow.forgetPassword form button {
   width: 216px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3048,7 +3001,7 @@ html body .filter .jumpWindow.forgetPassword form button:hover, html body .filte
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .filter .jumpWindow.forgetPassword form p {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
@@ -3064,19 +3017,18 @@ html body .filter .jumpWindow.news.display, html body .filter .jumpWindow.rules.
 html body .filter .jumpWindow.news.rules .allBtn, html body .filter .jumpWindow.rules.rules .allBtn {
   width: 200px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   display: block;
   margin: 20px auto 0;
 }
 html body .filter .jumpWindow.news.rules .allBtn:hover, html body .filter .jumpWindow.news.rules .allBtn:active, html body .filter .jumpWindow.news.rules .allBtn.active, html body .filter .jumpWindow.rules.rules .allBtn:hover, html body .filter .jumpWindow.rules.rules .allBtn:active, html body .filter .jumpWindow.rules.rules .allBtn.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .filter .jumpWindow.news.rules .box .infoBox, html body .filter .jumpWindow.rules.rules .box .infoBox {
   width: 100%;
@@ -3114,8 +3066,7 @@ html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p 
 html body .filter .jumpWindow.news.rules .checkBtn, html body .filter .jumpWindow.rules.rules .checkBtn {
   width: 216px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3154,16 +3105,15 @@ html body .filter .jumpWindow.news .box::-webkit-scrollbar-track, html body .fil
 html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.rules .box .infoBox {
   width: 90%;
   height: 46px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
-  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
+  background: #000000;
   border-radius: 5px;
-  border: solid 1px #b8151a;
+  border: solid 1px #daaf6d;
   overflow: hidden;
   margin: 0 auto 10px;
   padding: 0 24px 0 36px;
 }
 html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active {
-  background: #ffffff;
+  background: #000000;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
@@ -3187,7 +3137,7 @@ html body .filter .jumpWindow.news .box .infoBox ul, html body .filter .jumpWind
 html body .filter .jumpWindow.news .box .infoBox ul li, html body .filter .jumpWindow.rules .box .infoBox ul li {
   width: 100%;
   height: 46px;
-  border-bottom: solid 1px #b8151a;
+  border-bottom: solid 1px #daaf6d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3201,7 +3151,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li:last-child, html body .fi
   border: none;
 }
 html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle {
-  border-color: #b8151a;
+  border-color: #daaf6d;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3224,7 +3174,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .arrow_ic, htm
 }
 html body .filter .jumpWindow.news .box .infoBox ul li p, html body .filter .jumpWindow.rules .box .infoBox ul li p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   overflow: hidden;
@@ -3246,7 +3196,7 @@ html body .filter .jumpWindow.plsGo .content, html body .filter .jumpWindow.plsG
   text-align: center;
 }
 html body .filter .jumpWindow.plsGo .content p, html body .filter .jumpWindow.plsGo_2 .content p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -3254,8 +3204,7 @@ html body .filter .jumpWindow.plsGo .content p, html body .filter .jumpWindow.pl
 html body .filter .jumpWindow.plsGo button, html body .filter .jumpWindow.plsGo_2 button {
   width: 216px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3285,8 +3234,7 @@ html body .filter .jumpWindow.plsGo .btnBox button, html body .filter .jumpWindo
   width: 180px;
 }
 html body .filter .jumpWindow.plsGo .btnBox button:first-child, html body .filter .jumpWindow.plsGo_2 .btnBox button:first-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3309,12 +3257,12 @@ html body .filter .jumpWindow.betWindow .top,
 html body .filter .jumpWindow.betWindow .bottom {
   width: 100%;
   height: auto;
-  border-bottom: solid 3px #b8151a;
+  border-bottom: solid 3px #daaf6d;
   padding: 20px 0;
 }
 html body .filter .jumpWindow.betWindow .top .smallTitle,
 html body .filter .jumpWindow.betWindow .bottom .smallTitle {
-  color: #ba9141;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 16px;
@@ -3340,10 +3288,10 @@ html body .filter .jumpWindow.betWindow .top .selectBox select,
 html body .filter .jumpWindow.betWindow .bottom .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -3363,7 +3311,7 @@ html body .filter .jumpWindow.betWindow .bottom .selectBox i {
 }
 html body .filter .jumpWindow.betWindow .top .selectBox .money,
 html body .filter .jumpWindow.betWindow .bottom .selectBox .money {
-  color: #b8151a;
+  color: #DD2830;
   font-size: 14px;
   font-weight: bold;
   position: absolute;
@@ -3376,6 +3324,10 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3385,15 +3337,16 @@ html body .filter .jumpWindow.betWindow .top .inputBox input,
 html body .filter .jumpWindow.betWindow .bottom .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
+  margin: 0 auto;
 }
 html body .filter .jumpWindow.betWindow .top .inputBox input::-webkit-input-placeholder, html body .filter .jumpWindow.betWindow .bottom .inputBox input::-webkit-input-placeholder {
   color: #b08a48;
@@ -3411,10 +3364,57 @@ html body .filter .jumpWindow.betWindow .top .inputBox input::placeholder,
 html body .filter .jumpWindow.betWindow .bottom .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .filter .jumpWindow.betWindow .top .inputBox input:disabled,
+html body .filter .jumpWindow.betWindow .bottom .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
+html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea {
+  width: 300px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+}
+html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button {
+  background: #ffc800;
+  border-radius: 3px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:hover, html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:active, html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button.active,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:hover,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:active,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+  color: #ffffff;
+}
+html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:last-child,
+html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:last-child {
+  margin-right: 0;
+}
 html body .filter .jumpWindow.betWindow .top .amount,
 html body .filter .jumpWindow.betWindow .bottom .amount {
   width: 100%;
-  color: #b8151a;
+  color: #DD2830;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -3424,8 +3424,7 @@ html body .filter .jumpWindow.betWindow .top button,
 html body .filter .jumpWindow.betWindow .bottom button {
   width: 257px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3442,6 +3441,9 @@ html body .filter .jumpWindow.betWindow .bottom button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
+html body .filter .jumpWindow.betWindow .bottom .smallTitle {
+  color: #DD2830;
+}
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
   height: auto;
@@ -3451,8 +3453,7 @@ html body .filter .jumpWindow.betWindow .enterGame {
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 257px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3509,15 +3510,14 @@ html body .filter .jumpWindow.betWindow .enterGame div input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #DD2830;
   border-radius: 50%;
 }
 html body .filter .jumpWindow.betWindow .enterGame div input:checked::after {
   display: block;
 }
 html body .filter .jumpWindow.betWindow .enterGame div p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
@@ -3542,7 +3542,7 @@ html body .filter .jumpWindow.loading .content p {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #292CFF;
+  color: #0070C0;
   margin-top: 20px;
 }
 @-webkit-keyframes loading {
@@ -3613,7 +3613,7 @@ html body .filter .jumpWindow.applyWindow .content .secondTitle:nth-of-type(1) {
   margin-top: 0;
 }
 html body .filter .jumpWindow.applyWindow .content .text {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -3625,7 +3625,7 @@ html body .filter .jumpWindow.applyWindow .content .textBox {
   text-align: center;
 }
 html body .filter .jumpWindow.applyWindow .content .textBox p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
@@ -3682,7 +3682,7 @@ html body .filter .jumpWindow.eventWindow .content .secondTitle:nth-of-type(1) {
   margin-top: 0;
 }
 html body .filter .jumpWindow.eventWindow .content .text {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -3694,7 +3694,7 @@ html body .filter .jumpWindow.eventWindow .content .textBox {
   text-align: center;
 }
 html body .filter .jumpWindow.eventWindow .content .textBox p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
@@ -3706,8 +3706,7 @@ html body .filter .jumpWindow.eventWindow .content .textBox p:last-child {
 html body .filter .jumpWindow.eventWindow .content button {
   width: 135px;
   height: 45px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3740,9 +3739,9 @@ html body .filter .jumpWindow.waterRecord.pointPartner table tr td, html body .f
 html body .filter .jumpWindow.waterRecord table, html body .filter .jumpWindow.recordWindow table, html body .filter .jumpWindow.pointWindow table, html body .filter .jumpWindow.pointPartner table {
   width: 100%;
   height: auto;
-  background: #f1f1f1;
-  -webkit-box-shadow: 0 0 0 1px #b8151a;
-          box-shadow: 0 0 0 1px #b8151a;
+  background: #000000;
+  -webkit-box-shadow: 0 0 0 1px #daaf6d;
+          box-shadow: 0 0 0 1px #daaf6d;
   border-radius: 5px;
   overflow: hidden;
   margin: 24px 0;
@@ -3753,9 +3752,8 @@ html body .filter .jumpWindow.waterRecord table tr:last-child td p, html body .f
 html body .filter .jumpWindow.waterRecord table tr th, html body .filter .jumpWindow.recordWindow table tr th, html body .filter .jumpWindow.pointWindow table tr th, html body .filter .jumpWindow.pointPartner table tr th {
   height: 35px;
   vertical-align: middle;
-  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
-  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
-  border-bottom: solid 1px #b8151a;
+  background: #000000;
+  border-bottom: solid 1px #daaf6d;
 }
 html body .filter .jumpWindow.waterRecord table tr th:first-child, html body .filter .jumpWindow.recordWindow table tr th:first-child, html body .filter .jumpWindow.pointWindow table tr th:first-child, html body .filter .jumpWindow.pointPartner table tr th:first-child {
   padding-left: 16px;
@@ -3765,7 +3763,7 @@ html body .filter .jumpWindow.waterRecord table tr th:last-child, html body .fil
 }
 html body .filter .jumpWindow.waterRecord table tr th p, html body .filter .jumpWindow.recordWindow table tr th p, html body .filter .jumpWindow.pointWindow table tr th p, html body .filter .jumpWindow.pointPartner table tr th p {
   width: 100%;
-  color: #b8151a;
+  color: #DD2830;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -3916,12 +3914,12 @@ html body .filter .jumpWindow.changePhone .content .inputBox {
 html body .filter .jumpWindow.changePhone .content .inputBox input {
   width: 100%;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -3941,22 +3939,26 @@ html body .filter .jumpWindow.changePhone .content .inputBox input::-ms-input-pl
 html body .filter .jumpWindow.changePhone .content .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .filter .jumpWindow.changePhone .content .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .filter .jumpWindow.changePhone .content .getCode {
   width: 300px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   display: block;
   margin: 20px auto 30px;
 }
 html body .filter .jumpWindow.changePhone .content .getCode:hover, html body .filter .jumpWindow.changePhone .content .getCode:active, html body .filter .jumpWindow.changePhone .content .getCode.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .filter .jumpWindow.changePhone .content .btnBox {
   width: 300px;
@@ -3966,8 +3968,7 @@ html body .filter .jumpWindow.changePhone .content .btnBox {
 html body .filter .jumpWindow.changePhone .content .btnBox button {
   width: 100%;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -3980,7 +3981,7 @@ html body .filter .jumpWindow.changePhone .content .btnBox button:hover, html bo
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .filter .jumpWindow.changePhone .content .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 12px;
   font-weight: bold;
   margin-top: 5px;
@@ -4007,12 +4008,12 @@ html body .filter .jumpWindow.changePassword .content .inputBox {
 html body .filter .jumpWindow.changePassword .content .inputBox input {
   width: 100%;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -4032,8 +4033,13 @@ html body .filter .jumpWindow.changePassword .content .inputBox input::-ms-input
 html body .filter .jumpWindow.changePassword .content .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .filter .jumpWindow.changePassword .content .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .filter .jumpWindow.changePassword .content .inputBox .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 12px;
   font-weight: bold;
   margin-top: 5px;
@@ -4049,8 +4055,7 @@ html body .filter .jumpWindow.changePassword .content .inputBox i {
 html body .filter .jumpWindow.changePassword button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -4067,7 +4072,7 @@ html body .filter .jumpWindow.changePassword button:hover, html body .filter .ju
 html body .filter .jumpWindow.agentRegister {
   width: 1050px;
   height: 714px;
-  border: solid 4px #b8151a;
+  border: solid 4px #daaf6d;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4210,7 +4215,7 @@ html body .filter .jumpWindow.agentRegister .box .top .right .row .remindBox {
 }
 html body .filter .jumpWindow.agentRegister .box .top .left .row .remindBox p,
 html body .filter .jumpWindow.agentRegister .box .top .right .row .remindBox p {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -4297,7 +4302,7 @@ html body .filter .jumpWindow.agentRegister .box .top .right .row .depositBox di
 }
 html body .filter .jumpWindow.agentRegister .box .top .left .row .depositBox div p,
 html body .filter .jumpWindow.agentRegister .box .top .right .row .depositBox div p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 22px;
   font-weight: bold;
 }
@@ -4358,7 +4363,7 @@ html body .filter .jumpWindow.agentRegister .box .bottom div input:checked::afte
   display: block;
 }
 html body .filter .jumpWindow.agentRegister .box .bottom div p {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 25px;
   font-weight: bold;
   text-decoration: underline;
@@ -4367,8 +4372,7 @@ html body .filter .jumpWindow.agentRegister .box .bottom div p {
 html body .filter .jumpWindow.agentRegister .box .bottom button {
   width: 306px;
   height: 57px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -4386,7 +4390,7 @@ html body .filter .jumpWindow.agentRegister .box .bottom button:hover, html body
 html body .filter .jumpWindow .title {
   width: 100%;
   height: 75px;
-  border-bottom: solid 3px #b8151a;
+  border-bottom: solid 3px #daaf6d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4399,8 +4403,7 @@ html body .filter .jumpWindow .title {
   position: relative;
 }
 html body .filter .jumpWindow .title p {
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #ffffff;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -4424,7 +4427,7 @@ html body .gameWrap {
 html body .gameWrap .content {
   width: 1400px;
   height: auto;
-  margin: 0 auto 60px;
+  margin: 30px auto 60px;
 }
 html body .gameWrap .content .marqueeWrap {
   width: 100%;
@@ -4434,7 +4437,7 @@ html body .gameWrap .content .marqueeWrap {
 html body .gameWrap .content .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
@@ -4446,8 +4449,8 @@ html body .gameWrap .content .marqueeWrap .marquee {
 html body .gameWrap .content .marqueeWrap .marquee .title {
   width: 165px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4478,13 +4481,13 @@ html body .gameWrap .content .marqueeWrap .marquee .textBox {
   overflow: hidden;
 }
 html body .gameWrap .content .marqueeWrap .marquee .textBox p {
-  color: #b37d1f;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
   padding-left: 100%;
-  -webkit-animation: marquee 5s linear 0s infinite;
-          animation: marquee 5s linear 0s infinite;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
 }
 @keyframes marquee {
   0% {
@@ -4499,8 +4502,6 @@ html body .gameWrap .content .marqueeWrap .marquee .textBox p {
 html body .gameWrap .content .searchWrap {
   width: 100%;
   height: 70px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4514,23 +4515,25 @@ html body .gameWrap .content .searchWrap {
 html body .gameWrap .content .searchWrap i {
   width: 29px;
   height: 29px;
-  margin: 0 12px 0 20px;
+  margin: 0 12px 0 16px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: absolute;
 }
 html body .gameWrap .content .searchWrap input {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
   border-radius: 30px;
+  padding-left: 60px;
 }
 html body .gameWrap .content .searchWrap input::-webkit-input-placeholder {
   color: #b08a48;
@@ -4547,17 +4550,23 @@ html body .gameWrap .content .searchWrap input::-ms-input-placeholder {
 html body .gameWrap .content .searchWrap input::placeholder {
   color: #b08a48;
 }
+html body .gameWrap .content .searchWrap input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .gameWrap .content .searchWrap button {
   width: 120px;
   height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   margin-left: 12px;
 }
 html body .gameWrap .content .searchWrap button:hover, html body .gameWrap .content .searchWrap button:active, html body .gameWrap .content .searchWrap button.active {
@@ -4578,9 +4587,10 @@ html body .gameWrap .content .platformBox {
 html body .gameWrap .content .platformBox li {
   width: auto;
   height: 51px;
-  color: #b6832d;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
+  border: 1px solid #daaf6d;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4591,28 +4601,25 @@ html body .gameWrap .content .platformBox li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 8px;
-  margin: 0 20px 10px;
+  padding: 0 20px;
+  margin: 0 9px 10px;
   cursor: pointer;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
+}
+html body .gameWrap .content .platformBox li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
 html body .gameWrap .content .platformBox li.active {
+  border: 1px solid transparent;
+}
+html body .gameWrap .content .platformBox li.active p {
   color: #ffffff;
-}
-html body .gameWrap .content .platformBox li::before {
-  content: "";
-  position: absolute;
-  left: -31px;
-  top: 0;
-  width: 31px;
-  height: 100%;
-}
-html body .gameWrap .content .platformBox li::after {
-  content: "";
-  position: absolute;
-  right: -31px;
-  top: 0;
-  width: 31px;
-  height: 100%;
 }
 html body .gameWrap .content .gameBox {
   width: 100%;
@@ -4698,7 +4705,7 @@ html body .gameWrap .content .gameBox li div i {
 }
 html body .gameWrap .content .gameBox li p {
   width: 100%;
-  color: #ba9141;
+  color: #ff0000;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -4785,7 +4792,7 @@ html body .eventWrap .content .marqueeWrap {
 html body .eventWrap .content .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
@@ -4797,8 +4804,8 @@ html body .eventWrap .content .marqueeWrap .marquee {
 html body .eventWrap .content .marqueeWrap .marquee .title {
   width: 165px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4829,13 +4836,13 @@ html body .eventWrap .content .marqueeWrap .marquee .textBox {
   overflow: hidden;
 }
 html body .eventWrap .content .marqueeWrap .marquee .textBox p {
-  color: #b37d1f;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
   padding-left: 100%;
-  -webkit-animation: marquee 5s linear 0s infinite;
-          animation: marquee 5s linear 0s infinite;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
 }
 @keyframes marquee {
   0% {
@@ -4855,15 +4862,15 @@ html body .eventWrap .content .listBox {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 20px;
   margin-bottom: 12px;
 }
 html body .eventWrap .content .listBox li {
   width: auto;
   height: 51px;
-  color: #b6832d;
-  font-size: 20px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4874,36 +4881,38 @@ html body .eventWrap .content .listBox li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 8px;
-  margin: 0 20px 10px;
+  padding: 0 15px;
+  margin: 0 7px 10px;
   cursor: pointer;
 }
+html body .eventWrap .content .listBox li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
+}
 html body .eventWrap .content .listBox li.active {
-  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
 }
 html body .eventWrap .content .listBox li.active i {
   background-position-y: 100%;
 }
-html body .eventWrap .content .listBox li::before {
-  content: "";
-  position: absolute;
-  left: -31px;
-  top: 0;
-  width: 31px;
-  height: 100%;
+html body .eventWrap .content .listBox li.active p {
+  color: #ffffff;
 }
-html body .eventWrap .content .listBox li::after {
-  content: "";
-  position: absolute;
-  right: -31px;
-  top: 0;
-  width: 31px;
-  height: 100%;
+html body .eventWrap .content .listBox li:first-child {
+  margin: 0 7px 0 11px;
 }
 html body .eventWrap .content .listBox li i {
   width: 32px;
   height: 32px;
   margin-right: 10px;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
 html body .eventWrap .content .listBox li i.all_ic {
   background-position-x: 0;
@@ -5102,8 +5111,7 @@ html body .innerPage .center {
 html body .innerPage .center .banner {
   width: 1200px;
   height: auto;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #000000;
   border-radius: 10px;
   border: solid 1px #fadaa5;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4196078431);
@@ -5121,7 +5129,7 @@ html body .innerPage .center .banner .marqueeWrap {
 html body .innerPage .center .banner .marqueeWrap .marquee {
   width: 100%;
   height: 45px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
@@ -5136,8 +5144,8 @@ html body .innerPage .center .banner .marqueeWrap .marquee {
 html body .innerPage .center .banner .marqueeWrap .marquee .title {
   width: 160px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5169,13 +5177,13 @@ html body .innerPage .center .banner .marqueeWrap .marquee .textBox {
   overflow: hidden;
 }
 html body .innerPage .center .banner .marqueeWrap .marquee .textBox p {
-  color: #b37d1f;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
   padding-left: 100%;
-  -webkit-animation: marquee 5s linear 0s infinite;
-          animation: marquee 5s linear 0s infinite;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
 }
 @keyframes marquee {
   0% {
@@ -5292,10 +5300,9 @@ html body .innerPage .center .banner .bottom .right {
 html body .innerPage .center .banner .bottom .right button {
   width: 120px;
   height: 120px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #ffffff), to(#e5e5e5));
-  background: linear-gradient(to bottom, #ffffff 35%, #e5e5e5 100%);
+  background: #000000;
   border-radius: 16px;
-  border: solid 1px #ffffff;
+  border: solid 1px #fadaa5;
   color: #b6832d;
   font-size: 20px;
   font-weight: bold;
@@ -5326,7 +5333,7 @@ html body .innerPage .center .banner .bottom .right button i {
 html body .innerPage .center .innerMainWrap {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: #000000;
   border-radius: 10px;
   border: solid 1px #f3d197;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
@@ -5400,12 +5407,11 @@ html body .innerPage .center .innerMainWrap .leftSide .btnBox {
 html body .innerPage .center .innerMainWrap .leftSide .btnBox li {
   width: 205px;
   height: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border: solid 1px #daaf6d;
   border-left: none;
   border-radius: 0 30px 30px 0;
-  color: #6d4b12;
+  color: #ffcb72;
   font-size: 15px;
   font-weight: bold;
   display: -webkit-box;
@@ -5457,7 +5463,7 @@ html body .innerPage .center .innerMainWrap .rightSide {
 html body .innerPage .center .innerMainWrap .rightSide.member .memberInfo {
   width: 100%;
   height: 164px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -5503,7 +5509,7 @@ html body .innerPage .center .innerMainWrap .rightSide.member .memberInfo .box .
   color: #00980c;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .memberInfo .box .row .remind {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
@@ -5564,15 +5570,17 @@ html body .innerPage .center .innerMainWrap .rightSide.member .topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .topList li {
   width: auto;
   height: 40px;
   position: relative;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  border-bottom: transparent;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5583,29 +5591,29 @@ html body .innerPage .center .innerMainWrap .rightSide.member .topList li {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  padding: 0 10px;
-  margin-right: 35px;
+  padding: 0 23px;
+  margin-right: 11px;
 }
-html body .innerPage .center .innerMainWrap .rightSide.member .topList li::before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.member .topList li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
-html body .innerPage .center .innerMainWrap .rightSide.member .topList li::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.member .topList li:hover, html body .innerPage .center .innerMainWrap .rightSide.member .topList li:active, html body .innerPage .center .innerMainWrap .rightSide.member .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+}
+html body .innerPage .center .innerMainWrap .rightSide.member .topList li:hover p, html body .innerPage .center .innerMainWrap .rightSide.member .topList li:active p, html body .innerPage .center .innerMainWrap .rightSide.member .topList li.active p {
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -5673,12 +5681,12 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox 
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox .box ul li .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -5698,9 +5706,14 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox 
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox .box ul li .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox .box ul li .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox .box ul li .inputBox .remind {
   width: 320px;
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
@@ -5750,7 +5763,7 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox 
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox .link {
   width: 100%;
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -5816,12 +5829,12 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox 
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -5841,9 +5854,14 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox 
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox .remind {
   width: 320px;
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
@@ -5893,13 +5911,13 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox 
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox .copy_ic {
   width: 42px;
-  height: 42px;
-  background: #f0f0f0;
+  height: 37px;
+  background: #000000;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 0;
+  right: 1px;
   cursor: pointer;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox ul li .inputBox .copy_ic::before {
@@ -5946,12 +5964,12 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomB
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomBox .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -5971,6 +5989,11 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomB
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomBox .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomBox .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomBox .inputBox .edit_ic {
   width: 15px;
   height: 15px;
@@ -5988,12 +6011,12 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform table {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform table tr:nth-of-type(2n + 1) {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform table tr th {
   height: 40px;
@@ -6023,7 +6046,7 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform
 }
 html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -6040,8 +6063,7 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox.platform
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox {
   width: 100%;
   height: 140px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -6155,7 +6177,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .levelBar >
   width: 30%;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .levelBar > div .smallTitle {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
@@ -6205,7 +6227,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .levelBar >
   text-align: right;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .levelBar > div .remind span {
-  color: #b8151a;
+  color: #ff0000;
   padding: 0 5px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox {
@@ -6225,7 +6247,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul {
 html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li {
   width: 350px;
   height: 120px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb72;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
@@ -6248,17 +6271,17 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li::bef
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #ffcb72;
   top: 0;
   left: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li .smallTitle {
-  color: #ba9141;
+  color: #ffcb72;
   font-size: 18px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li .amount {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 30px;
   font-weight: bold;
 }
@@ -6280,11 +6303,10 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox .box butto
 html body .innerPage .center .innerMainWrap .rightSide.vip .back {
   width: auto;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
-  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
-  border: solid 1px #a47d3b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   border-radius: 30px;
-  color: #775012;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -6313,8 +6335,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .back .arrow_ic {
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table {
   width: 100%;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   height: auto;
   margin-bottom: 20px;
 }
@@ -6340,7 +6362,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table.five tr td:nth-
   width: 26%;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr:nth-of-type(2n + 1) {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr th {
   height: 40px;
@@ -6349,11 +6371,10 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table tr th {
   vertical-align: middle;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr th:first-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#b6b6b6), color-stop(77%, #dfdfdf));
-  background: linear-gradient(to top, #b6b6b6 0%, #dfdfdf 77%);
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr th:first-child p {
-  color: #3a3a3a;
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr th p {
   width: 100%;
@@ -6382,7 +6403,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table tr td p {
   width: 100%;
   height: 22px;
   border-right: solid 1px #a8a8a8;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -6405,12 +6426,11 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table tr td p i {
 html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-  border: none;
   padding: 12px 40px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox .title {
@@ -6428,7 +6448,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox .box {
   height: auto;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox .box p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
@@ -6444,8 +6464,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox .box p.inn
 html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox {
   width: 100%;
   height: 306px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -6517,12 +6536,12 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inpu
 html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -6542,15 +6561,20 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inpu
 html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inputBox .copy_ic {
   width: 42px;
-  height: 42px;
-  background: #f0f0f0;
+  height: 37px;
+  background: #000000;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 0;
+  right: 1px;
   cursor: pointer;
 }
 html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inputBox .copy_ic::before {
@@ -6613,12 +6637,11 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .inviteImg {
 html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-  border: none;
   padding: 12px 40px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox .title {
@@ -6643,7 +6666,7 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox .box {
   height: auto;
 }
 html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox .box p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
@@ -6659,8 +6682,7 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox .box p.
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox {
   width: 100%;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -6703,7 +6725,7 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .sm
           justify-content: space-between;
 }
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .smallTitle p {
-  color: #ba9141;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
 }
@@ -6718,8 +6740,7 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .sm
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .smallTitle button {
   width: 170px;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -6743,7 +6764,7 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .am
           justify-content: space-between;
 }
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox .box .amount p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 43px;
   font-weight: bold;
 }
@@ -6763,7 +6784,8 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul {
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li {
   width: auto;
   height: 70px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb72;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
@@ -6785,17 +6807,17 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li::
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #ffcb72;
   top: 0;
   left: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li .name {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li .amount {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 25px;
   font-weight: bold;
   display: -webkit-box;
@@ -6848,7 +6870,7 @@ html body .innerPage .center .innerMainWrap .rightSide.card .cardBox .choosing s
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -6886,10 +6908,10 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .selectBox
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -6914,12 +6936,12 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox 
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -6939,8 +6961,13 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox 
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   margin-top: 5px;
@@ -6948,8 +6975,7 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .remind {
 html body .innerPage .center .innerMainWrap .rightSide.card .applyBox button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -6968,15 +6994,17 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li {
   width: auto;
   height: 40px;
   position: relative;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  border-bottom: transparent;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6987,29 +7015,30 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  padding: 0 10px;
-  margin-right: 35px;
+  padding: 0 23px;
+  margin-right: 11px;
 }
-html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li::before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
+  font-weight: bold;
 }
-html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li:hover, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li:active, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+}
+html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li:hover p, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li:active p, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .topList li.active p {
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -7024,7 +7053,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.disp
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox {
   width: 100%;
   height: 220px;
-  background: #e6e6e6;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7059,7 +7088,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .smallTitle {
   width: 60px;
-  color: #8d6116;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: right;
@@ -7073,10 +7102,10 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -7102,12 +7131,12 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -7128,6 +7157,11 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .inputBox input::placeholder {
   color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .inputBox i {
   width: 15px;
@@ -7150,18 +7184,17 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .btnBox button {
   width: 80px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 100%);
+  background: #000000;
   border-radius: 3px;
-  border: solid 1px #daaf6d;
-  color: #b6832d;
+  border: solid 1px #ffcb72;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   margin-right: 8px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87a33), to(#ca9d58));
-  background: linear-gradient(to bottom, #a87a33 0%, #ca9d58 100%);
+  background: #cf0505;
+  border-color: transparent;
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .box .row .btnBox button:last-child {
@@ -7170,19 +7203,23 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn {
   width: 150px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   margin-top: 15px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn:hover, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn:active, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn:hover, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn:active, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .topBox .checkBtn.active {
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox {
   width: 100%;
@@ -7192,12 +7229,12 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox table {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox table tr:nth-of-type(2n + 1) {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox table tr th {
   height: 40px;
@@ -7227,7 +7264,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -7236,7 +7273,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
   white-space: nowrap;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox table tr td p.money {
-  color: #b8151a;
+  color: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal .downBox .pageBox {
   width: 100%;
@@ -7329,12 +7366,12 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.wate
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr:nth-of-type(2n + 1) td {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr th {
   height: 40px;
@@ -7370,7 +7407,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.wate
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -7400,11 +7437,10 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.wate
   height: 30px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td .btnBox button:first-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
-  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
-  border: solid 1px #a47d3b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   border-radius: 30px;
-  color: #775012;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -7414,17 +7450,16 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.wate
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td .btnBox button:last-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td .btnBox button:last-child:hover, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td .btnBox button:last-child:active, html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water table tr td .btnBox button:last-child.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.water .pageBox {
   width: 100%;
@@ -7514,7 +7549,7 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.wate
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -7524,7 +7559,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox {
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox {
   width: 100%;
   height: 220px;
-  background: #e6e6e6;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7559,7 +7594,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .smallTitle {
   width: 80px;
-  color: #8d6116;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: right;
@@ -7577,10 +7612,10 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -7605,12 +7640,12 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -7632,6 +7667,11 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .inputBox i {
   width: 15px;
   height: 14px;
@@ -7643,7 +7683,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
   pointer-events: none;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .inputBox .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 12px;
   font-weight: bold;
   position: absolute;
@@ -7661,18 +7701,17 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .btnBox button {
   width: 80px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 100%);
+  background: #000000;
   border-radius: 3px;
-  border: solid 1px #daaf6d;
-  color: #b6832d;
+  border: solid 1px #ffcb72;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   margin-right: 8px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87a33), to(#ca9d58));
-  background: linear-gradient(to bottom, #a87a33 0%, #ca9d58 100%);
+  background: #cf0505;
+  border-color: transparent;
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .box .row .btnBox button:last-child {
@@ -7681,19 +7720,23 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check {
   width: 150px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   margin-top: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check:hover, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check:active, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check:hover, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check:active, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox .check.active {
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox {
   width: 100%;
@@ -7703,7 +7746,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable {
   width: 100%;
   height: auto;
-  border: solid 1px #b78d4b;
+  border: solid 1px #ffcb72;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row {
   width: 100%;
@@ -7711,7 +7754,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
   overflow: hidden;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row:nth-of-type(2n + 1) .outerTitle {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row:first-child .outerTitle {
   background: -webkit-gradient(linear, left bottom, left top, from(#b78c4b), to(#d5ab6a));
@@ -7742,7 +7785,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .outerTitle {
   width: 100%;
   height: 40px;
-  background: #f7f7f7;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7773,7 +7816,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .outerTitle div p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -7782,7 +7825,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
   white-space: nowrap;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .outerTitle div p.money {
-  color: #b8151a;
+  color: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .outerTitle div i {
   width: 9px;
@@ -7802,12 +7845,12 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .innerBox table {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #b8151a;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .innerBox table tr th {
   height: 35px;
-  background: #f7f7f7;
+  background: #000000;
   vertical-align: middle;
   border: solid 1px #b8151a;
   border-width: 0 1px 1px 0;
@@ -7817,7 +7860,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .innerBox table tr th p {
   width: 100%;
-  color: #b8151a;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -7847,7 +7890,7 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .innerBox table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -7876,13 +7919,13 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more {
   width: 26px;
   height: 26px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7895,8 +7938,11 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .down
   margin-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:hover, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:active, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more.active {
+  background: #ffffff;
+  color: #b8151a;
+}
+html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:hover, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:active, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more.active {
   background: #b8151a;
-  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:hover i, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more:active i, html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .downBox .fakeTable .row .pageBox .more.active i {
   -webkit-filter: grayscale(1) brightness(15);
@@ -8039,15 +8085,17 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li {
   width: auto;
   height: 40px;
   position: relative;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  border-bottom: transparent;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8058,29 +8106,29 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  padding: 0 10px;
-  margin-right: 35px;
+  padding: 0 23px;
+  margin-right: 11px;
 }
-html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li::before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
-html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+}
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li:hover p, html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li:active p, html body .innerPage .center .innerMainWrap .rightSide.eventApply .topList li.active p {
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -8136,14 +8184,14 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box t
   vertical-align: middle;
   border: solid 1px #a8a8a8;
   border-width: 0 1px 1px 0;
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table tr th:last-child {
   border-right: none;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table tr th p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -8157,14 +8205,14 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box t
   border: solid 1px #a8a8a8;
   border-width: 0 1px 1px 0;
   vertical-align: middle;
-  background: #f7f7f7;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table tr td:last-child {
   border-right: none;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -8179,7 +8227,7 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box t
   margin-top: 8px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table.second tr:nth-of-type(even) td {
-  background: #fbfbfb;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box table.second tr th {
   background: #b8151a;
@@ -8207,8 +8255,7 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child {
   width: 135px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -8218,29 +8265,38 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .
   margin-left: 15px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:last-child.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child {
   width: 220px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
-  border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
+  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
   border-radius: 30px;
-  color: #ffffff;
-  font-size: 16px;
+  border: solid 1px #a47d3b;
+  color: #775012;
+  font-size: 15px;
   font-weight: bold;
-  letter-spacing: 1px;
   margin: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+  color: #ffffff;
+}
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .box .btnBox button:first-child.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ae7f30), to(#dba955));
+  background: linear-gradient(to top, #ae7f30 0%, #dba955 100%);
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox {
   width: 100%;
   height: 220px;
-  background: #e6e6e6;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8275,7 +8331,7 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .topTitle {
   width: 60px;
-  color: #8d6116;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: right;
@@ -8289,10 +8345,10 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -8318,12 +8374,12 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -8344,6 +8400,11 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .inputBox input::placeholder {
   color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .inputBox i {
   width: 15px;
@@ -8366,18 +8427,17 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .btnBox button {
   width: 80px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 100%);
+  background: #000000;
   border-radius: 3px;
-  border: solid 1px #daaf6d;
-  color: #b6832d;
+  border: solid 1px #ffcb72;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   margin-right: 8px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87a33), to(#ca9d58));
-  background: linear-gradient(to bottom, #a87a33 0%, #ca9d58 100%);
+  background: #cf0505;
+  border-color: transparent;
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .smallBox .row .btnBox button:last-child {
@@ -8386,8 +8446,7 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBox .checkBtn {
   width: 150px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -8408,12 +8467,12 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downB
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downBox table {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downBox table tr:nth-of-type(2n + 1) {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downBox table tr th {
   height: 40px;
@@ -8452,7 +8511,7 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downB
 }
 html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .downBox table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -8650,17 +8709,16 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox {
 html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox button {
   width: 250px;
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 100%);
+  background: #000000;
   border-radius: 3px;
-  border: solid 1px #daaf6d;
-  color: #b6832d;
+  border: solid 1px #ffcb72;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87a33), to(#ca9d58));
-  background: linear-gradient(to bottom, #a87a33 0%, #ca9d58 100%);
+  background: #cf0505;
+  border-color: transparent;
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .bigBtnBox button:first-child {
@@ -8679,7 +8737,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList {
   width: 100%;
   height: auto;
   display: none;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList.display {
   display: -webkit-box;
@@ -8690,9 +8748,11 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li
   width: auto;
   height: 40px;
   position: relative;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  border-bottom: transparent;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8703,30 +8763,30 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  padding: 0 10px;
-  margin-right: 35px;
+  padding: 0 23px;
+  margin-right: 11px;
 }
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li::before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li:hover, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li:active, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+}
+html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li:hover p, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li:active p, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .topList li.active p {
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box {
   width: 100%;
   height: auto;
   min-height: 530px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -8801,8 +8861,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBo
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #DD2830;
   border-radius: 50%;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBox .inputBox input:checked::after {
@@ -8837,11 +8896,10 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBo
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBox div button {
   width: auto;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
-  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
-  border: solid 1px #a47d3b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   border-radius: 30px;
-  color: #775012;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -8899,8 +8957,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li {
   width: 100%;
   height: 45px;
-  background: #f7f7f7;
-  border: solid 1px transparent;
+  background: #000000;
+  border: solid 1px #ffcb72;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8916,8 +8974,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li:hover,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li:active,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.active {
-  background: #ffffff;
-  border-color: #b8151a;
+  background: #000000;
+  border-color: #ff0000;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
 }
@@ -8944,6 +9002,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read {
   background: none;
+  border: 2px solid #3a3a3a;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read::before,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read::before {
@@ -8961,7 +9020,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.editing:hover,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.editing:active,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.editing.active {
-  background: #f7f7f7;
+  background: #000000;
   border-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -9032,8 +9091,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #DD2830;
   border-radius: 50%;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li input:checked::after,
@@ -9063,7 +9121,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li div .smallTitle,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li div .smallTitle {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 18px;
   font-weight: bold;
   margin-right: 5px;
@@ -9073,7 +9131,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li div .content,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li div .content {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   overflow: hidden;
@@ -9082,7 +9140,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li div .time,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li div .time {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   display: -webkit-box;
@@ -9130,7 +9188,7 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postC
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailCnt .smallTitle .name,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .smallTitle .name {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 23px;
   font-weight: bold;
 }
@@ -9145,13 +9203,14 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postC
   width: 100%;
   height: auto;
   min-height: 338px;
-  background: #f7f7f7;
+  background: #000000;
+  border: 1px solid #ffcb72;
   padding: 16px;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailCnt .content p,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .content p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -9171,11 +9230,10 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailC
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .innerPageBox button {
   width: 26px;
   height: 26px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   border-color: #dbb170;
@@ -9185,8 +9243,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailC
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .innerPageBox button:hover,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .innerPageBox button:active,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .innerPageBox button.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailCnt .innerPageBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailCnt .innerPageBox button:active, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mailCnt .innerPageBox button.active,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .postCnt .innerPageBox button:hover,
@@ -9324,15 +9382,17 @@ html body .innerPage .center .innerMainWrap .rightSide.point .topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 24px;
+  padding-left: 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .topList li {
   width: auto;
   height: 40px;
   position: relative;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+  background: #000000;
+  border: 1px solid #daaf6d;
+  border-bottom: transparent;
+  -webkit-transform: skewX(335deg);
+          transform: skewX(335deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9343,29 +9403,29 @@ html body .innerPage .center .innerMainWrap .rightSide.point .topList li {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  padding: 0 10px;
-  margin-right: 35px;
+  padding: 0 23px;
+  margin-right: 11px;
 }
-html body .innerPage .center .innerMainWrap .rightSide.point .topList li::before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.point .topList li p {
+  display: block;
+  color: #ffcb72;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: skewX(-335deg);
+          transform: skewX(-335deg);
 }
-html body .innerPage .center .innerMainWrap .rightSide.point .topList li::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: 0;
-  width: 24px;
-  height: 100%;
+html body .innerPage .center .innerMainWrap .rightSide.point .topList li:hover, html body .innerPage .center .innerMainWrap .rightSide.point .topList li:active, html body .innerPage .center .innerMainWrap .rightSide.point .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border-color: transparent;
+}
+html body .innerPage .center .innerMainWrap .rightSide.point .topList li:hover p, html body .innerPage .center .innerMainWrap .rightSide.point .topList li:active p, html body .innerPage .center .innerMainWrap .rightSide.point .topList li.active p {
+  color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -9380,7 +9440,7 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox.display {
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox {
   width: 100%;
   height: 167px;
-  background: #e6e6e6;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9407,7 +9467,7 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .smallTitle {
   width: 60px;
-  color: #8d6116;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   text-align: right;
@@ -9421,12 +9481,12 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -9447,6 +9507,11 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .inputBox input::placeholder {
   color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .inputBox i {
   width: 15px;
@@ -9469,18 +9534,17 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .btnBox button {
   width: 80px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 100%);
+  background: #000000;
   border-radius: 3px;
-  border: solid 1px #daaf6d;
-  color: #b6832d;
+  border: solid 1px #ffcb72;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
   margin-right: 8px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87a33), to(#ca9d58));
-  background: linear-gradient(to bottom, #a87a33 0%, #ca9d58 100%);
+  background: #cf0505;
+  border-color: transparent;
   color: #ffffff;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .box .btnBox button:last-child {
@@ -9489,19 +9553,23 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn {
   width: 150px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   margin-top: 15px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn:hover, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn:active, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn:hover, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn:active, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .checkBtn.active {
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox {
   width: 100%;
@@ -9516,8 +9584,8 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox 
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li {
   width: 100%;
   height: 56px;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9528,7 +9596,7 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox 
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div {
   height: 30px;
-  border-right: solid 1px #a8a8a8;
+  border-right: solid 1px #ffcb72;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9549,58 +9617,53 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox 
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div:nth-of-type(3), html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div:nth-of-type(4) {
   width: 29%;
 }
-html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div:nth-of-type(4) {
-  border: none;
-}
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox {
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #cbaa72;
+  background: #000000;
   border: none;
   padding: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox.disable {
   height: 30px;
   background: none;
-  border-left: solid 1px #a8a8a8;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox button {
   width: auto;
   height: 25px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding: 0 15px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div.btnBox button.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div p {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox .partner li div span {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox table {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
-  border: solid 1px #b78d4b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   margin-bottom: 20px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox table tr:nth-of-type(2n + 1) {
-  background: #e4e4e4;
+  background: #000000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox table tr th {
   height: 40px;
@@ -9625,7 +9688,7 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox 
 }
 html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox table tr td p {
   width: 100%;
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -9735,11 +9798,10 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox {
 html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button {
   width: auto;
   height: 28px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
-  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
-  border: solid 1px #a47d3b;
+  background: #000000;
+  border: solid 1px #ffcb72;
   border-radius: 30px;
-  color: #775012;
+  color: #ffcb72;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -9916,8 +9978,7 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .name
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent {
   width: 100%;
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -9972,10 +10033,10 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .sele
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10000,12 +10061,12 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inpu
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10025,9 +10086,14 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inpu
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remind {
   width: 100%;
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -10043,8 +10109,7 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remi
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn {
   width: 300px;
   height: 45px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10060,12 +10125,11 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .chec
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-  border: none;
   padding: 16px 48px 24px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle {
@@ -10087,7 +10151,7 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .small
   margin: 0 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 18px;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -10096,7 +10160,7 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .small
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle .line {
   width: 100%;
   height: 2px;
-  background: #c30505;
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content {
   width: 100%;
@@ -10107,13 +10171,13 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .conte
   margin: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p.remind {
-  color: #292CFF;
+  color: #0070C0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p.innerTitle {
   color: #ba9141;
@@ -10122,8 +10186,7 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .conte
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox {
   width: 100%;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -10162,8 +10225,7 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox .small
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox .smallTitle button {
   width: 170px;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10201,8 +10263,7 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList {
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10255,7 +10316,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul {
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li {
   width: auto;
   height: 70px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb72;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
@@ -10277,12 +10339,12 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #ffcb72;
   top: 0;
   left: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li .name {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
@@ -10313,7 +10375,7 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .smallRemind {
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -10373,10 +10435,10 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .topBo
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .topBox .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10412,12 +10474,12 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .input
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10436,6 +10498,11 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .input
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .inputBox input::placeholder {
   color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox ul {
   width: 300px;
@@ -10482,8 +10549,7 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox ul li:
 html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10498,8 +10564,7 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox button
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox {
   width: 100%;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1843137255);
@@ -10554,8 +10619,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox .box
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox .box .smallTitle button {
   width: 110px;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10593,8 +10657,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList {
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10647,7 +10710,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul 
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul li {
   width: auto;
   height: 70px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb72;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
@@ -10669,12 +10733,12 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul 
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #ffcb72;
   top: 0;
   left: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul li .name {
-  color: #3a3a3a;
+  color: #ffcb72;
   font-size: 16px;
   font-weight: bold;
 }
@@ -10712,7 +10776,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul {
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul li {
   width: auto;
   height: 135px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb72;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
@@ -10735,7 +10800,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul l
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #ffcb72;
   top: 0;
   left: 0;
 }
@@ -10757,7 +10822,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul l
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -10794,10 +10859,10 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box .selectBox select {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #b08a48;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10823,12 +10888,12 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box .inputBox input {
   width: 300px;
   height: 42px;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding-left: 16px;
@@ -10848,16 +10913,20 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box .inputBox input::placeholder {
   color: #b08a48;
 }
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box .inputBox input:disabled {
+  background: #000000 !important;
+  border: solid 1px #ffcb72 !important;
+  color: #ffcb72 !important;
+}
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 14px;
   font-weight: bold;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box button {
   width: 300px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10873,12 +10942,11 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-  border: none;
   padding: 16px 48px 24px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .smallTitle {
@@ -10900,7 +10968,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .rem
   margin: 0 10px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .smallTitle p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 18px;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -10909,7 +10977,7 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .rem
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .smallTitle .line {
   width: 100%;
   height: 2px;
-  background: #c30505;
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .content {
   width: 100%;
@@ -10920,13 +10988,13 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .rem
   margin: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .content p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .remindBox .content p.remind {
-  color: #292CFF;
+  color: #0070C0;
 }
 html body .innerPage .center .innerMainWrap .rightSide .title {
   width: 100%;
@@ -10955,7 +11023,7 @@ html body .innerPage .center .innerMainWrap .rightSide .title .smallStar_ic {
       flex-shrink: 0;
 }
 html body .innerPage .center .innerMainWrap .rightSide .title p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -10965,7 +11033,7 @@ html body .innerPage .center .innerMainWrap .rightSide .title p {
 html body .innerPage .center .innerMainWrap .rightSide .title .line {
   width: 100%;
   height: 2px;
-  background: #c30505;
+  background: #ff0000;
 }
 html body .innerPage .center .innerMainWrap .rightSide .title .star_ic {
   width: 112px;
@@ -10973,6 +11041,131 @@ html body .innerPage .center .innerMainWrap .rightSide .title .star_ic {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 15px;
+}
+html body .innerPage .center .outerBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .outerBox .walletSide {
+  width: 300px;
+  height: auto;
+  margin-left: 15px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox {
+  width: 100%;
+  height: 400px;
+  background: #000000;
+  border-radius: 10px;
+  border: solid 1px #f3d197;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+  padding: 90px 24px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 45px 12px 12px;
+  margin-bottom: 15px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox:last-child {
+  padding: 12px;
+  margin: 0;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: 15px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .title span {
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .title i {
+  width: 100%;
+  height: 2px;
+  background: #ff0000;
+  margin-left: 10px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul::-webkit-scrollbar {
+  width: 0;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #ffcb72;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .platform {
+  color: #ffcb72;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .betBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .betBox div {
+  width: 50%;
+  height: auto;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .betBox div .smallTitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .betBox div .money {
+  color: #929292;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox ul li .betBox div .result {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .eventBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .eventBox img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+html body .innerPage .center .outerBox .walletSide .innerBox .eventBox img:last-child {
+  margin: 0;
 }
 html body .help {
   width: 100%;
@@ -10991,7 +11184,7 @@ html body .help .center .marqueeWrap {
 html body .help .center .marqueeWrap .marquee {
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
@@ -11006,8 +11199,8 @@ html body .help .center .marqueeWrap .marquee {
 html body .help .center .marqueeWrap .marquee .title {
   width: 160px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11039,7 +11232,7 @@ html body .help .center .marqueeWrap .marquee .textBox {
   overflow: hidden;
 }
 html body .help .center .marqueeWrap .marquee .textBox p {
-  color: #b37d1f;
+  color: #ffcb72;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
@@ -11060,7 +11253,7 @@ html body .help .center .marqueeWrap .marquee .textBox p {
 html body .help .center .helpMainWrap {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: #000000;
   border-radius: 10px;
   border: solid 1px #f3d197;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
@@ -11135,12 +11328,11 @@ html body .help .center .helpMainWrap .leftSide .btnBox {
 html body .help .center .helpMainWrap .leftSide .btnBox li {
   width: 205px;
   height: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
-  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
-  border: solid 1px #daaf6d;
+  background: #000000;
+  border: solid 1px #ffcb72;
   border-left: none;
   border-radius: 0 30px 30px 0;
-  color: #6d4b12;
+  color: #ffcb72;
   font-size: 15px;
   font-weight: bold;
   display: -webkit-box;
@@ -11159,8 +11351,8 @@ html body .help .center .helpMainWrap .leftSide .btnBox li {
   margin-bottom: 12px;
 }
 html body .help .center .helpMainWrap .leftSide .btnBox li:hover, html body .help .center .helpMainWrap .leftSide .btnBox li:active, html body .help .center .helpMainWrap .leftSide .btnBox li.active {
-  border-color: #b8151a;
-  color: #b8151a;
+  border-color: #ff0000;
+  color: #ffffff;
 }
 html body .help .center .helpMainWrap .leftSide .btnBox li:hover, html body .help .center .helpMainWrap .leftSide .btnBox li:active, html body .help .center .helpMainWrap .leftSide .btnBox li.active {
   width: 235px;
@@ -11242,7 +11434,7 @@ html body .help .center .helpMainWrap .rightSide .title .smallStar_ic {
       flex-shrink: 0;
 }
 html body .help .center .helpMainWrap .rightSide .title p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 16px;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -11252,7 +11444,7 @@ html body .help .center .helpMainWrap .rightSide .title p {
 html body .help .center .helpMainWrap .rightSide .title .line {
   width: 100%;
   height: 2px;
-  background: #c30505;
+  background: #ff0000;
 }
 html body .help .center .helpMainWrap .rightSide .title .star_ic {
   width: 112px;
@@ -11276,8 +11468,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList {
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList .allBtn {
   width: 262px;
   height: 45px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -11294,7 +11485,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList .allBtn:hov
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li {
   width: 100%;
   height: 64px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -11303,7 +11494,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li {
   margin-bottom: 20px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li:active, html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li.active {
-  border-color: #b8151a;
+  border-color: #DD2830;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li:last-child {
   margin: 0;
@@ -11315,7 +11506,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li:active .
   border-bottom: solid 1px #b8151a;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li:active .smallTitle p, html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li.active .smallTitle p {
-  color: #b8151a;
+  color: #DD2830;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li:active .smallTitle i, html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li.active .smallTitle i {
   -webkit-transform: rotate(180deg);
@@ -11360,7 +11551,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content
   padding: 16px 24px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -11370,13 +11561,13 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content
   margin: 0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content p .remind {
-  color: #292CFF;
+  color: #0070C0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
   width: 100%;
   height: auto;
   min-height: 600px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -11385,7 +11576,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
   padding: 24px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox.active {
-  border-color: #b8151a;
+  border-color: #DD2830;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox h2 {
   color: #ba9141;
@@ -11397,7 +11588,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox h2:first-chi
   margin-top: 0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -11407,7 +11598,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox p:last-child
   margin: 0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox p .remind {
-  color: #292CFF;
+  color: #0070C0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox {
   width: 100%;
@@ -11465,8 +11656,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox button {
   width: 257px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -11480,7 +11670,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 12px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox {
@@ -11506,8 +11696,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox butt
   height: 42px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button.sendBtn {
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -11520,23 +11709,22 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox butt
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button:last-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
-  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  background: #b8151a;
   border: solid 1px #b8151a;
   border-radius: 30px;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button:last-child:hover, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button:last-child:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button:last-child.active {
-  background: #b8151a;
-  color: #ffffff;
+  background: #ffffff;
+  color: #b8151a;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
@@ -11545,7 +11733,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox {
   padding: 32px 0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox:active, html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox.active {
-  border-color: #b8151a;
+  border-color: #DD2830;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox .license {
   width: 982px;
@@ -11638,8 +11826,7 @@ html body .register .box .inputBox em {
 html body .register .box .inputBox .getCode {
   width: auto;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -11659,7 +11846,7 @@ html body .register .box .inputBox .getCode:hover, html body .register .box .inp
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .register .box .inputBox .remind {
-  color: #292CFF;
+  color: #0070C0;
   font-size: 12px;
   font-weight: bold;
   position: absolute;
@@ -11720,7 +11907,7 @@ html body .register .box .checkBox p {
   font-weight: bold;
 }
 html body .register .box .checkBox p span {
-  color: #292CFF;
+  color: #0070C0;
   cursor: pointer;
 }
 html body .register .box .btnBox {
@@ -11753,8 +11940,7 @@ html body .register .box .btnBox button:first-child:hover, html body .register .
   background: linear-gradient(to top, #ffffff 15%, #f2f2f2 100%);
 }
 html body .register .box .btnBox button:last-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #66E123;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -12312,7 +12498,7 @@ html body .agentHelp .privacyCenter .textBox p:last-child {
 html body .agentHelp .center {
   width: 1400px;
   height: auto;
-  background: #f7f7f7;
+  background: #000000;
   border-radius: 10px;
   border: solid 1px #f3d197;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
@@ -12447,7 +12633,7 @@ html body .agentHelp .center .rightSide .lineTitle p {
 html body .agentHelp .center .rightSide .box {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
