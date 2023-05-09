@@ -103,7 +103,6 @@ $headerMoneyList_secondBorder: #a8a8a8;
 //headerNav
 $headerNav_Word: #ffffff;
 $headerNav_Hover: #b37d1f;
-$headerNav_agentHover: #b8151a;
 
 //ad
 @mixin ad_Dot {
@@ -168,7 +167,6 @@ $footer_Title: #ba9141;
 $footer_List_Word: #1f2629;
 $footer_List_Active: linear-gradient(to top,#970707 0%,#cf0505 98%);
 $footer_bottomBG: #b8151a;
-$footer_bottomColor: #ffffff;
 @mixin footerBtn_2 {
     background: linear-gradient(to top,#ebebeb 0%,#ffffff 100%);
     border-radius: 30px;
@@ -278,7 +276,7 @@ $innerPageLeftList_iconBG: #ffffff;
     background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
     border-radius: 16px;
     border: solid 1px #daaf6d;
-    box-shadow: 0 2px 5px 0 #0000002f;
+    box-shadow: 0 2px 3px 1px #00000049;
     display: flex;
 }
 $innerBG_1_Border: #daaf6d;
@@ -314,30 +312,8 @@ $innerPage_Sercurity_high: #00980c;
 $innerPage_Sercurity_unCheck: #929292;
 $innerPage_Sercurity_Check: #b8151a;
 
-@mixin levelCardStyle_0 {
-    background: linear-gradient(to bottom, #D9F1FF 0% #99D1F4 100%);
-    border-radius: 32px;
-    border: solid 2px #2A87BF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_0_innerBorder: #2A87BF;
-$levelCardStyle_0_innerTitle: #0A2488;
 @mixin levelCardStyle_1 {
-    background: linear-gradient(to bottom,#f8ea9f 10%,#d8ff9a 56%,#94d858 100%);
-    border-radius: 32px;
-    border: solid 2px #168508;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_1_innerBorder: #49bd43;
-$levelCardStyle_1_innerTitle: #146e0f;
-@mixin levelCardStyle_2 {
-    background: linear-gradient(to bottom,#ffe8d3 31%,#ffc99e 100%);
+    background: linear-gradient(to top,#f8e2d2 4%,#dcb194 34%,#f8e2d2 72%);
     border-radius: 32px;
     border: solid 2px #9f6f4e;
     display: flex;
@@ -345,52 +321,8 @@ $levelCardStyle_1_innerTitle: #146e0f;
     justify-content: center;
     overflow: hidden;
 }
-$levelCardStyle_2_innerBorder: #dea076;
-$levelCardStyle_2_innerTitle: #8d5128;
-@mixin levelCardStyle_3 {
-    background: linear-gradient(to bottom,#feffae 15%,#ffef6a 100%);
-    border-radius: 32px;
-    border: solid 2px #b98700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_3_innerBorder: #ebc501;
-$levelCardStyle_3_innerTitle: #e18700;
-@mixin levelCardStyle_4 {
-    background: linear-gradient(to bottom,#f0f0f0 31%,#c5c5c5 72%,#f0f0f0 89%);
-    border-radius: 32px;
-    border: solid 2px #7a7b89;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_4_innerBorder: #a7a8b3;
-$levelCardStyle_4_innerTitle: #6a6d7e;
-@mixin levelCardStyle_5 {
-    background: linear-gradient(to bottom,#fff9d0 38%,#fce4a4 74%,#fff9d0 100%);
-    border-radius: 32px;
-    border: solid 2px #b57b23;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_5_innerBorder: #d9b759;
-$levelCardStyle_5_innerTitle: #ad720b;
-@mixin levelCardStyle_6 {
-    background: linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);
-    border-radius: 32px;
-    border: solid 2px #b50809;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-$levelCardStyle_6_innerBorder: #e7bb6c;
-$levelCardStyle_6_innerTitle: #d57f00;
+$levelCardStyle_1_innerBorder: #dea076;
+$levelCardStyle_1_innerTitle: #8d5128;
 
 @mixin inviteBox {
     background: linear-gradient(to bottom,#fdeec6 32%,#e2c28d 100%);
@@ -401,12 +333,6 @@ $levelCardStyle_6_innerTitle: #d57f00;
     align-items: center;
     justify-content: space-around;
 }
-$inviteBox_vipLevelBG_1: linear-gradient(to bottom,#f8ea9f 10%,#d8ff9a 56%,#94d858 100%);
-$inviteBox_vipLevelBG_2: linear-gradient(to bottom,#ffe8d3 31%,#ffc99e 100%);
-$inviteBox_vipLevelBG_3: linear-gradient(to bottom,#feffae 15%,#ffef6a 100%);
-$inviteBox_vipLevelBG_4: linear-gradient(to bottom,#f0f0f0 31%,#c5c5c5 72%,#f0f0f0 89%);
-$inviteBox_vipLevelBG_5: linear-gradient(to bottom,#fff9d0 38%,#fce4a4 74%,#fff9d0 100%);
-$inviteBox_vipLevelBG_6: linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);
 @mixin inviteBtn {
     background: linear-gradient(to bottom,#caab5a 0%,#ebd3a8 100%);
     border-radius: 50%;
@@ -544,11 +470,6 @@ $table_inner_TableTitleBG: #f7f7f7;
 $table_inner_TableBorder: #b8151a;
 $table_inner_TableBG: #ffffff;
 $table_point_BtnBoxBG: #cbaa72;
-$table_agent_TitleBG: #b8151a;
-$table_agent_Title: #ffffff;
-$table_agent_Border: #b8151a;
-$table_agent_BG: #f3f3f3;
-$table_agent_secondBG: #eaeaea;
 
 //page
 $page_line: #d0d0d0;
@@ -592,48 +513,6 @@ $register_Color: #3b5461;
 
     &:hover,&:active,&.active {
         background: linear-gradient(to top,#ffffff 15%,#f2f2f2 100%);
-    }
-}
-
-//agent
-$agent_Color_1: #d38c19;
-$agent_Color_2: #4d4d4d;
-$agent_BG_1: #ffffff;
-$agent_BG_2: #ffebcb;
-$agent_Border: #b8151a;
-@mixin agentInput {
-    background: #e4eaf2;
-    border-radius: 5px;
-    box-shadow: -2px -3px 5px 0 #0000001d,1px 2px 3px #d2dae7 inset;
-    border: none;
-    color: #2b4858;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 12px;
-
-    &::placeholder {
-        color: #91a2c0;
-    }
-}
-$agent_register_depositBG: #f5f5f5;
-$agent_register_depositBorder: #daaf6d;
-@mixin agentHelpList {
-    background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
-    border: solid 1px #daaf6d;
-    border-left: none;
-    border-radius: 0 30px 30px 0;
-    color: #ababab;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.3s all;
-    padding-left: 16px;
-
-    &:hover,&:active,&.active {
-        border-color: #b8151a;
-        color: #b8151a;
     }
 }
 
