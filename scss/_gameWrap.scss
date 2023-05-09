@@ -6,7 +6,7 @@
     .content {
         width: 1400px;
         height: auto;
-        margin: 0 auto 60px;
+        margin: 30px auto 60px;
 
         // .banner {
         //     width: 100%;
@@ -80,7 +80,7 @@
                         font-weight: bold;
                         white-space: nowrap;
                         padding-left: 100%;
-                        animation: marquee 5s linear 0s infinite;
+                        animation: marquee 10s linear 0s infinite;
                     }
                 }
 
@@ -100,7 +100,7 @@
         .searchWrap {
             width: 100%;
             height: 70px;
-            background: $mainLinear_1;
+            // background: $mainLinear_1;
             border-radius: 50px;
             display: flex;
             align-items: center;
@@ -110,8 +110,9 @@
             i {
                 width: 29px;
                 height: 29px;
-                margin: 0 12px 0 20px;
+                margin: 0 12px 0 16px;
                 flex-shrink: 0;
+                position: absolute;
             }
 
             input {
@@ -119,12 +120,14 @@
                 height: 50px;
                 @include mainInput;
                 border-radius: 30px;
+                padding-left: 60px;
             }
 
             button {
                 width: 120px;
                 height: 50px;
                 @include secondBtn;
+                background: $footer_List_Active;
                 margin-left: 12px;
             }
         }
@@ -144,34 +147,29 @@
                 color: $gameWrap_platformBtn_Word;
                 font-size: 20px;
                 font-weight: bold;
+                border: 1px solid $gameWrap_platformBoxLI_border ;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 0 8px;
-                margin: 0 20px 10px;
+                padding: 0 20px;
+                margin: 0 9px 10px;
                 cursor: pointer;
+                transform: skewX(335deg);
+
+                p {
+                    display: block;
+                    color: $gameWrap_platformBtn_Word;
+                    font-size: 20px;
+                    font-weight: bold;
+                    transform: skewX(-335deg);
+                }
 
                 &.active {
-                    color: $gameWrap_platformBtn_Active;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: -31px;
-                    top: 0;
-                    width: 31px;
-                    height: 100%;
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    right: -31px;
-                    top: 0;
-                    width: 31px;
-                    height: 100%;
+                    border: 1px solid transparent;
+                    p {
+                        color: $gameWrap_platformBtn_Active;
+                    }
                 }
             }
         }
@@ -254,7 +252,7 @@
 
                 p {
                     width: 100%;
-                    color: $mainFont_2;
+                    color: $subDeco_color02;
                     font-size: 18px;
                     font-weight: bold;
                     text-align: center;

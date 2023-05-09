@@ -1,10 +1,18 @@
+//主背景色
+$mainColor: #000000;
+$mainDeco_color: #DD2830;
+$subDeco_color: #66E123;
+$subDeco_color02: #ff0000;
+
 //主字色
 $mainFont_1: #b8151a;
 $mainFont_2: #ba9141;
 $mainFont_3: #3a3a3a;
+$mainFont_4: #ffffff;
+$mainFont_5: #ffcb72;
 
 //提醒字色
-$remind: #292CFF;
+$remind: #0070C0;
 $remind_sus: #009d0f;
 $remind_fail: #b8151a;
 $disable: #929292;
@@ -12,12 +20,13 @@ $disable: #929292;
 //主漸層
 $mainLinear_1: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
 $mainLinear_Word: #ffffff;
+$subLinearActive: linear-gradient(to top,#970707 0%,#cf0505 98%);
 
 //header色
 $header_BG_1: #ffffff;
 $header_Color1: #5a6569;
 $header_Color2: #daaf6d;
-$header_mainColor: #b8151a;
+$header_mainColor: #DD2830;
 $header_mainColor_Active: #c9a567;
 $header_langBorder: #daaf6d;
 $header_langBtn: #e5bb85;
@@ -27,12 +36,12 @@ $header_langBtn: #e5bb85;
     color: #ffffff;
 
     &:hover,&:active,&.active {
-        background: #b8151a;
+        background: #DD2830;
         color: #ffffff;
     }
 }
 @mixin headerLang {
-    background: #ffffff;
+    background: #000000;
     border: solid 1px #daaf6d;
     border-radius: 30px;
     box-shadow: 0 2px 5px 0 #0000001a inset;
@@ -62,21 +71,21 @@ $header_langBtn: #e5bb85;
     }
 }
 @mixin headerInput {
-    background: #ffffff;
+    background: #000000;
     border: solid 1px #daaf6d;
     border-radius: 30px;
     box-shadow: 0 2px 5px 0 #0000001a inset;
-    color: #b11319;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     padding: 0 5px 0 12px;
 
     &::placeholder {
-        color: #b11319;
+        color: #ffffff;
     }
 }
 @mixin headerMoney {
-    color: #b8151a;
+    color: #DD2830;
     font-size: 16px;
     font-weight: bold;
     position: relative;
@@ -102,7 +111,7 @@ $headerMoneyList_Border: #c9a76c;
 $headerMoneyList_secondBorder: #a8a8a8;
 //headerNav
 $headerNav_Word: #ffffff;
-$headerNav_Hover: #b37d1f;
+$headerNav_Hover: #ff0000;
 $headerNav_agentHover: #b8151a;
 
 //ad
@@ -124,12 +133,12 @@ $headerNav_agentHover: #b8151a;
 }
 
 //marquee
-$marquee_BG: #ffffff;
+$marquee_BG: #000000;
 $marquee_Border: #daaf6d;
-$marquee_Linear: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+$marquee_Linear: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
 $marquee_Linear_Word: #ffffff;
 $marquee_Shadow: #0000002c;
-$marquee_Word: #b37d1f;
+$marquee_Word: $mainFont_5;
 
 //mainWrap
 $line: #c30505;
@@ -162,10 +171,10 @@ $line: #c30505;
 
 //footer
 $footer_Border: #f3d197;
-$footer_List_BG: #f3f3f3;
+$footer_List_BG: #000000;
 $footer_List_Shadow: #0000001c;
 $footer_Title: #ba9141;
-$footer_List_Word: #1f2629;
+$footer_List_Word: #ffffff;
 $footer_List_Active: linear-gradient(to top,#970707 0%,#cf0505 98%);
 $footer_bottomBG: #b8151a;
 $footer_bottomColor: #ffffff;
@@ -181,9 +190,10 @@ $footer_bottomColor: #ffffff;
 
 //gameWrap
 $gameWrap_Word: #000000;
-$gameWrap_platformBtn_Word: #b6832d;
+$gameWrap_platformBtn_Word: #ffcb72;
 $gameWrap_platformBtn_Active: #ffffff;
 $gameWrap_Game_platformBG: #ffffffc7;
+$gameWrap_platformBoxLI_border: #daaf6d;
 @mixin playBtn {
     background: linear-gradient(to top,#037cd9 0%,#2cd5ff 100%);
     border-radius: 30px;
@@ -223,16 +233,18 @@ $innerPage_Banner_Medal: #ffffff;
 $innerPage_Banner_LevelBG: #b8151a;
 $innerPage_Banner_Time: #ffebad;
 $innerPage_topList_Word: #ffffff;
+$innerPage_topList_border: #daaf6d;
+$innerPage_topList_activeBG: linear-gradient(to top, #970707 0%, #cf0505 98%);
 @mixin Banner {
-    background: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+    background: #000000;
     border-radius: 10px;
     border: solid 1px #fadaa5;
     box-shadow: 0 2px 5px 0 #0000006b;
 }
 @mixin BannerBtn {
-    background: linear-gradient(to bottom,#ffffff 35%,#e5e5e5 100%);
+    background: #000000;
     border-radius: 16px;
-    border: solid 1px #ffffff;
+    border: solid 1px #fadaa5;
     color: #b6832d;
     font-size: 20px;
     font-weight: bold;
@@ -247,18 +259,18 @@ $innerPage_topList_Word: #ffffff;
     }
 }
 @mixin innerPageWrapBG {
-    background: #f7f7f7;
+    background: #000000;
     border-radius: 10px;
     border: solid 1px #f3d197;
     box-shadow: 0 2px 5px 0 #00000042 inset;
     padding: 90px 24px 24px;
 }
 @mixin innerPageLeftList {
-    background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
+    background: #000000;
     border: solid 1px #daaf6d;
     border-left: none;
     border-radius: 0 30px 30px 0;
-    color: #6d4b12;
+    color: #ffcb72;
     font-size: 15px;
     font-weight: bold;
     display: flex;
@@ -275,7 +287,7 @@ $innerPage_topList_Word: #ffffff;
 }
 $innerPageLeftList_iconBG: #ffffff;
 @mixin innerBG_1 {
-    background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
+    background: #000000;
     border-radius: 16px;
     border: solid 1px #daaf6d;
     box-shadow: 0 2px 5px 0 #0000002f;
@@ -283,15 +295,16 @@ $innerPageLeftList_iconBG: #ffffff;
 }
 $innerBG_1_Border: #daaf6d;
 @mixin innerBG_2 {
-    background: #ffffff;
+    background: #000000;
     border-radius: 16px;
     border: solid 1px #daaf6d;
     box-shadow: 0 2px 5px 1px #00000049;
 }
-$innerBG_2_secondBG: #e6e6e6;
-$innerBG_2_secondTitle: #8d6116;
+$innerBG_2_secondBG: #000000;
+$innerBG_2_secondTitle: #ffcb72;
 @mixin innerBG_3 {
-    background: #ffffff;
+    background: #000000;
+    border: 1px solid #ffcb72;
     border-radius: 5px;
     box-shadow: 0 2px 3px 1px #0000001e;
     position: relative;
@@ -302,7 +315,7 @@ $innerBG_2_secondTitle: #8d6116;
         position: absolute;
         width: 5px;
         height: 100%;
-        background: #daaf6d;
+        background: #ffcb72;
         top: 0;
         left: 0;
     }
@@ -315,7 +328,7 @@ $innerPage_Sercurity_unCheck: #929292;
 $innerPage_Sercurity_Check: #b8151a;
 
 @mixin levelCardStyle_0 {
-    background: linear-gradient(to bottom, #D9F1FF 0% #99D1F4 100%);
+    background: linear-gradient(to bottom, #D9F1FF 0%, #99D1F4 100%);
     border-radius: 32px;
     border: solid 2px #2A87BF;
     display: flex;
@@ -432,8 +445,8 @@ $innerPage_Betting_totalBG: #cca261;
 $innerPage_Betting_totalColor: #ffffff;
 
 @mixin mail {
-    background: #f7f7f7;
-    border: solid 1px transparent;
+    background: #000000;
+    border: solid 1px #ffcb72;
     display: flex;
     align-items: center;
     position: relative;
@@ -441,8 +454,8 @@ $innerPage_Betting_totalColor: #ffffff;
     cursor: pointer;
 
     &:hover,&:active,&.active {
-        background: #ffffff;
-        border-color: #b8151a;
+        background: #000000;
+        border-color: #ff0000;
         box-shadow: 0 2px 5px 0 #00000049;
 
         &::before {
@@ -460,7 +473,7 @@ $innerPage_Betting_totalColor: #ffffff;
         background: #daaf6d;
     }
 }
-$mail_BG: #f7f7f7;
+$mail_BG: #000000;
 
 @mixin transfer_applyBG {
     background: linear-gradient(to bottom,#fff3d3 32%,#f2dcb6 100%);
@@ -482,11 +495,11 @@ $deposit_depList_innerBG: #daa448;
 
 //help
 @mixin helpLeftList {
-    background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
-    border: solid 1px #daaf6d;
+    background: #000000;
+    border: solid 1px #ffcb72;
     border-left: none;
     border-radius: 0 30px 30px 0;
-    color: #6d4b12;
+    color: #ffcb72;
     font-size: 15px;
     font-weight: bold;
     display: flex;
@@ -497,8 +510,8 @@ $deposit_depList_innerBG: #daa448;
     padding: 0 5px 0 15px;
 
     &:hover,&:active,&.active {
-        border-color: #b8151a;
-        color: #b8151a;
+        border-color: #ff0000;
+        color: #ffffff;
     }
 }
 @mixin helpLeftList_innerBtn {
@@ -516,14 +529,14 @@ $deposit_depList_innerBG: #daa448;
     }
 }
 @mixin helpMoreList {
-    background: #ffffff;
+    background: #000000;
     border-radius: 16px;
     border: solid 1px #daaf6d;
     box-shadow: 0 2px 5px 1px #00000049;
     overflow: hidden;
 
     &:active,&.active {
-        border-color: #b8151a;
+        border-color: #DD2830;
     }
 }
 $helpMoreList_Border: #b8151a;
@@ -531,19 +544,19 @@ $help_upload_Border: #cccccc;
 
 //table樣式
 $table_TitleBG: linear-gradient(to top,#b78c4b 0%,#d5ab6a 100%);
-$table_TitleSecondBG: linear-gradient(to top,#b6b6b6 0%,#dfdfdf 77%);
+$table_TitleSecondBG: #000000;
 $table_TitleColor: #ffffff;
-$table_Border: #b78d4b;
+$table_Border: #ffcb72;
 $table_secondBorder: #a8a8a8;
-$table_BG: #f7f7f7;
-$table_secondBG: #e4e4e4;
+$table_BG: #000000;
+$table_secondBG: #000000;
 $table_thirdBG: #fbfbfb;
 $table_inner_TitleBG: #b8151a;
 $table_inner_BG: #a01014;
-$table_inner_TableTitleBG: #f7f7f7;
+$table_inner_TableTitleBG: #000000;
 $table_inner_TableBorder: #b8151a;
-$table_inner_TableBG: #ffffff;
-$table_point_BtnBoxBG: #cbaa72;
+$table_inner_TableBG: #000000;
+$table_point_BtnBoxBG: #000000;
 $table_agent_TitleBG: #b8151a;
 $table_agent_Title: #ffffff;
 $table_agent_Border: #b8151a;
@@ -560,22 +573,22 @@ $page_ActiveBG: #b8151a;
 $filter: #0000009e;
 
 //彈窗色
-$jumpWindow_Title: linear-gradient(to top,#970707 0%,#cf0505 98%);
-$jumpWindow_BG: #f9f9f9;
-$jumpWindow_Border: #b8151a;
+$jumpWindow_Title: #ffffff;
+$jumpWindow_BG: #000000;
+$jumpWindow_Border: $marquee_Border;
 @mixin newsBox {
-    background: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
+    background: #000000;
     border-radius: 5px;
-    border: solid 1px #b8151a;
+    border: solid 1px #daaf6d;
     overflow: hidden;
 
     &.active {
-        background: #ffffff;
+        background: #000000;
         box-shadow: 0 2px 5px 0 #0000001d inset;
     }
 }
-$jumpWindow_table_TitleBG: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
-$jumpWindow_table_BG: #f1f1f1;
+$jumpWindow_table_TitleBG: #000000;
+$jumpWindow_table_BG: #000000;
 $jumpWindow_table_Border: #b74f4e;
 
 $register_htmlBG: #bd9c66;
@@ -643,7 +656,8 @@ $agent_register_depositBorder: #daaf6d;
 
 //最常用按鈕
 @mixin mainBtn {
-    background: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+    // background: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+    background: $mainDeco_color;
     border: none;
     border-radius: 30px;
     color: #ffffff;
@@ -657,7 +671,7 @@ $agent_register_depositBorder: #daaf6d;
 }
 //第二常用按鈕
 @mixin secondBtn {
-    background: linear-gradient(to top,#970707 0%,#cf0505 98%);
+    background: $subDeco_color;
     border: none;
     border-radius: 30px;
     color: #ffffff;
@@ -687,26 +701,43 @@ $agent_register_depositBorder: #daaf6d;
         color: #ffffff;
     }
 }
+@mixin moneyBtn02 {
+    background: #ffc800;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+        color: #ffffff;
+    }
+}
 //日期按鈕
 @mixin dateBtn {
-    background: linear-gradient(to bottom,#ffffff 15%,#f2f2f2 100%);
+    background: #000000;
     border-radius: 3px;
-    border: solid 1px #daaf6d;
-    color: #b6832d;
+    border: solid 1px #ffcb72;
+    color: #ffcb72;
     font-size: 16px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: linear-gradient(to bottom,#a87a33 0%,#ca9d58 100%);
+        background: #cf0505;
+        border-color: transparent;
         color: #ffffff;
     }
 }
 //淺黃按鈕
 @mixin lightBtn_1 {
-    background: linear-gradient(to top,#f0ddbc 0%,#fff7e2 70%);
-    border: solid 1px #a47d3b;
+    background: #000000;
+    border: solid 1px #ffcb72;
     border-radius: 30px;
-    color: #775012;
+    color: #ffcb72;
     font-size: 14px;
     font-weight: bold;
 
@@ -717,22 +748,22 @@ $agent_register_depositBorder: #daaf6d;
 }
 //紅白按鈕
 @mixin lightBtn_2 {
-    background: linear-gradient(to top,#e0e0e0 0%,#ffffff 70%);
+    background: #b8151a;
     border: solid 1px #b8151a;
     border-radius: 30px;
-    color: #b8151a;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: #b8151a;
-        color: #ffffff;
+        background: #ffffff;
+        color: #b8151a;
     }
 }
 $lightBtn_secondColor: #dbb170;
 
 button:disabled {
-    background: #c9c9c9 !important;
+    background: #504f4f !important;
     border: none !important;
     box-shadow: none !important;
     color: #ffffff !important;
@@ -745,17 +776,23 @@ button:disabled {
 
 //最常用input
 @mixin mainInput {
-    background: #ffffff;
+    background: #000000;
     border: solid 1px #daaf6d;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 #0000001d inset;
-    color: #3a3a3a;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     padding-left: 16px;
 
     &::placeholder {
         color: #b08a48;
+    }
+
+    &:disabled {
+        background: #000000 !important;
+        border: solid 1px #ffcb72 !important;
+        color: #ffcb72 !important;
     }
 }
 @mixin registerInput {
@@ -779,17 +816,17 @@ input:disabled {
     box-shadow: none !important;
     border: none !important;
 }
-$input_disabledBG: #f0f0f0;
+$input_disabledBG: #000000;
 
 
 //select
 
 
 @mixin mainSelect {
-    background: #ffffff;
+    background: #000000;
     border-radius: 5px;
     border: solid 1px #daaf6d;
-    color: #b08a48;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     padding-left: 16px;
@@ -857,7 +894,7 @@ $input_disabledBG: #f0f0f0;
         transform: translate(-50%,-50%);
         width: 13px;
         height: 13px;
-        background: linear-gradient(to top,#970707 0%,#cf0505 98%);
+        background: $mainDeco_color;
         border-radius: 50%;
     }
 

@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     height: auto;
+    background: $mainColor;
     border-top: solid 1px $footer_Border;
 
     .center {
@@ -13,6 +14,7 @@ footer {
             width: 100%;
             height: auto;
             display: flex;
+            background: $mainColor;
             padding: 30px 0;
 
             .listBox {
@@ -25,6 +27,7 @@ footer {
                     width: 220px;
                     height: 280px;
                     background: $footer_List_BG;
+                    border: 1px solid $marquee_Border;
                     border-radius: 16px;
                     box-shadow: 0 0 10px 1px $footer_List_Shadow inset;
                     padding: 16px 24px;
@@ -80,6 +83,7 @@ footer {
                                 background-clip: text;
                                 color: transparent;
                                 font-size: 18px;
+                                font-weight: bold;
 
                                 &.small {
                                     font-size: 15px;
@@ -104,7 +108,14 @@ footer {
                     width: 200px;
                     height: 54px;
                     @include mainBtn;
+                    background: $mainColor;
+                    color: $mainFont_2;
+                    border: 1px solid $marquee_Border;
                     font-size: 18px;
+
+                    &:hover,&:active,&.active {
+                        color: $mainFont_3;
+                    }
 
                     &.link {
                         background: #ffffff;
@@ -112,21 +123,21 @@ footer {
 
                         &::before {
                             content: "";
-                            position: absolute;
-                            left: 50%;
-                            top: 50%;
-                            transform: translate(-50%,-50%);
                             width: 121px;
                             height: 48px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
                         }
                     }
                 }
 
-                // iframe {
-                //     width: 200px;
-                //     height: 54px;
-                //     @include footerBtn_2;
-                // }
+                iframe {
+                    width: 200px;
+                    height: 54px;
+                    @include footerBtn_2;
+                }
 
                 a {
                     width: 57px;
@@ -140,6 +151,7 @@ footer {
             width: 100%;
             height: auto;
             display: flex;
+            background: $mainColor;
             align-items: center;
 
             p {
@@ -168,6 +180,7 @@ footer {
         .bottom {
             width: 100%;
             height: auto;
+            background: $mainColor;
             padding: 30px 0;
 
             ul {
